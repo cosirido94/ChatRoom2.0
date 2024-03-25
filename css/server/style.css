@@ -1,0 +1,83 @@
+/* Stile globale per il tuo dialogo */
+QDialog {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Titolo */
+
+QLabel#titleLabel
+{font-size: 22px; qproperty-alignment: 'AlignCenter'; }
+
+
+
+/* Etichette */
+QLabel#ipLabel, QLabel#portLabel  , QLabel#nickNameLabel{
+    font-size: 18px;
+    color: #333;
+}
+
+/* Input di testo */
+QLineEdit {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Stato del server */
+
+QLabel#serverStatusLabel
+{
+    font-size: 18px;
+    color: #333;
+    width: 30px;
+}
+QLabel#statusIndicator.stop
+{
+    width: 16px;
+    height: 16px;
+    background-color: red;
+}
+QLabel#statusIndicator.running {
+    width: 16px;
+    height: 16px;
+    background-color: green;
+}
+
+QLabel#statusIndicator[objectName="statusIndicatorStopped"] {
+    background-color: red;
+}
+/* Indicatore di stato */
+
+/* Pulsante Start/Stop Server */
+QPushButton#serverButton , QPushButton#connectButton
+{
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+}
+/*QPushButton#serverButton:checked
+{
+    background-color: red;
+}*/
+
+QProgressBar
+{
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center; /* Centra il testo all'interno della barra di avanzamento */
+    color: black; /* Colore del testo */
+}
+
+QProgressBar::chunk
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff5555, stop:1 #55ff55);
+    width: 1px;  /* Modifica la larghezza di ogni blocco della barra di avanzamento */
+}
+
+QProgressBar::chunk:disabled
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #aaaaaa, stop:1 #aaaaaa);
+}
+

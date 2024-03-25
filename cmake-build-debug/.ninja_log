@@ -1,0 +1,11 @@
+# ninja log v5
+0	55	1711361063709981829	build.ninja	2fa5d055e1277d5e
+1	9	1711360218458241985	server_autogen/mocs_compilation.cpp	79f785ff9704335a
+1	9	1711360218458241985	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/mocs_compilation.cpp	79f785ff9704335a
+9	1378	1711360219826262064	CMakeFiles/server.dir/server/src/main.cpp.o	2d064922032689f8
+20	34	1711360025351404343	CMakeFiles/server.dir/server/src/serverDialog.cpp.o	f325b192e787252a
+20	1410	1711360026727424590	CMakeFiles/server.dir/main.cpp.o	a4018bd93670d70b
+1	9	1711360218458241985	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/timestamp	79f785ff9704335a
+19	34	1711360025351404343	CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o	a79f0ec56c6f66e3
+1	9	1711360218458241985	server_autogen/timestamp	79f785ff9704335a
+1378	1723	1711360220166267054	server	2966dcc777816e51

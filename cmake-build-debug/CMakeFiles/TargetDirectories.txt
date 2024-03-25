@@ -1,5 +1,4 @@
-/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/ChatRoom.dir
+/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/server.dir
 /home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/ChatRoom_autogen_timestamp_deps.dir
-/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/ChatRoom_autogen.dir
+/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/server_autogen.dir
