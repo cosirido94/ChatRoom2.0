@@ -72,7 +72,12 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom",
 	"DEP_FILE" : "",
@@ -86,6 +91,12 @@
 			null
 		],
 		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/include/messageHandler.h",
+			"MU",
+			"NUAYT2GJ5V/moc_messageHandler.cpp",
+			null
+		],
+		[
 			"/home/ilcondor/Documents/Project C++/ChatRoom/server/include/server.h",
 			"MU",
 			"CIAW6PGLSA/moc_server.cpp",
@@ -96,12 +107,18 @@
 			"MU",
 			"CIAW6PGLSA/moc_serverDialog.cpp",
 			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/server/include/user.h",
+			"MU",
+			"CIAW6PGLSA/moc_user.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NETWORK_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -117,6 +134,7 @@
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
 		"/usr/include/c++/11",
 		"/usr/include/x86_64-linux-gnu/c++/11",
 		"/usr/include/c++/11/backward",
@@ -155,6 +173,11 @@
 			null
 		],
 		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/src/messageHandler.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/ilcondor/Documents/Project C++/ChatRoom/server/src/main.cpp",
 			"MU",
 			null
@@ -166,6 +189,11 @@
 		],
 		[
 			"/home/ilcondor/Documents/Project C++/ChatRoom/server/src/serverDialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/server/src/user.cpp",
 			"MU",
 			null
 		]

@@ -139,13 +139,43 @@ CMakeFiles/server.dir/server/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/server/src/main.cpp" -o CMakeFiles/server.dir/server/src/main.cpp.s
 
+CMakeFiles/server.dir/message/src/messageHandler.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/message/src/messageHandler.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/message/src/messageHandler.cpp
+CMakeFiles/server.dir/message/src/messageHandler.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/message/src/messageHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/message/src/messageHandler.cpp.o -MF CMakeFiles/server.dir/message/src/messageHandler.cpp.o.d -o CMakeFiles/server.dir/message/src/messageHandler.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/message/src/messageHandler.cpp"
+
+CMakeFiles/server.dir/message/src/messageHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/message/src/messageHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/message/src/messageHandler.cpp" > CMakeFiles/server.dir/message/src/messageHandler.cpp.i
+
+CMakeFiles/server.dir/message/src/messageHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/message/src/messageHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/message/src/messageHandler.cpp" -o CMakeFiles/server.dir/message/src/messageHandler.cpp.s
+
+CMakeFiles/server.dir/server/src/user.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/server/src/user.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/user.cpp
+CMakeFiles/server.dir/server/src/user.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/server/src/user.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/server/src/user.cpp.o -MF CMakeFiles/server.dir/server/src/user.cpp.o.d -o CMakeFiles/server.dir/server/src/user.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/server/src/user.cpp"
+
+CMakeFiles/server.dir/server/src/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server/src/user.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/server/src/user.cpp" > CMakeFiles/server.dir/server/src/user.cpp.i
+
+CMakeFiles/server.dir/server/src/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server/src/user.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/server/src/user.cpp" -o CMakeFiles/server.dir/server/src/user.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/server.dir/custom/src/customLineEdit.cpp.o" \
 "CMakeFiles/server.dir/server/src/serverDialog.cpp.o" \
 "CMakeFiles/server.dir/server/src/server.cpp.o" \
-"CMakeFiles/server.dir/server/src/main.cpp.o"
+"CMakeFiles/server.dir/server/src/main.cpp.o" \
+"CMakeFiles/server.dir/message/src/messageHandler.cpp.o" \
+"CMakeFiles/server.dir/server/src/user.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -155,12 +185,15 @@ server: CMakeFiles/server.dir/custom/src/customLineEdit.cpp.o
 server: CMakeFiles/server.dir/server/src/serverDialog.cpp.o
 server: CMakeFiles/server.dir/server/src/server.cpp.o
 server: CMakeFiles/server.dir/server/src/main.cpp.o
+server: CMakeFiles/server.dir/message/src/messageHandler.cpp.o
+server: CMakeFiles/server.dir/server/src/user.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+server: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.3
 server: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 server: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

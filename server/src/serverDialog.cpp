@@ -1,3 +1,4 @@
+
 #include "../include/serverDialog.h"
 #include "include/customLineEdit.h"
 #include <QLabel>
@@ -106,8 +107,8 @@ void ServerDialog::toggleServer()
         lockInputAccess(ipEdit , portEdit );
         toggleStyleStatus();
 
-        delete myServer;
-        myServer = nullptr;
+        /* *Andranno anche chiuse le connessioni */
+        clearServer();
     }
 }
 
@@ -165,6 +166,11 @@ void ServerDialog::toggleStyleStatus()
     }
 }
 
+void ServerDialog::clearServer()
+{
+    delete myServer;
+    myServer = nullptr;
+}
 
 void lockInputAccess( CustomLineEdit *ipEdit , CustomLineEdit *portEdit )
 {

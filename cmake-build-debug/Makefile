@@ -130,6 +130,19 @@ server/fast:
 .PHONY : server/fast
 
 #=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
 # Target rules for targets named server_autogen
 
 # Build rule for target.
@@ -142,12 +155,122 @@ server_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/build
 .PHONY : server_autogen/fast
 
+#=============================================================================
+# Target rules for targets named client_autogen
+
+# Build rule for target.
+client_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_autogen
+.PHONY : client_autogen
+
+# fast build rule for target.
+client_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_autogen.dir/build.make CMakeFiles/client_autogen.dir/build
+.PHONY : client_autogen/fast
+
+client/src/client.o: client/src/client.cpp.o
+.PHONY : client/src/client.o
+
+# target to build an object file
+client/src/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/client.cpp.o
+.PHONY : client/src/client.cpp.o
+
+client/src/client.i: client/src/client.cpp.i
+.PHONY : client/src/client.i
+
+# target to preprocess a source file
+client/src/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/client.cpp.i
+.PHONY : client/src/client.cpp.i
+
+client/src/client.s: client/src/client.cpp.s
+.PHONY : client/src/client.s
+
+# target to generate assembly for a file
+client/src/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/client.cpp.s
+.PHONY : client/src/client.cpp.s
+
+client/src/clientDialog.o: client/src/clientDialog.cpp.o
+.PHONY : client/src/clientDialog.o
+
+# target to build an object file
+client/src/clientDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/clientDialog.cpp.o
+.PHONY : client/src/clientDialog.cpp.o
+
+client/src/clientDialog.i: client/src/clientDialog.cpp.i
+.PHONY : client/src/clientDialog.i
+
+# target to preprocess a source file
+client/src/clientDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/clientDialog.cpp.i
+.PHONY : client/src/clientDialog.cpp.i
+
+client/src/clientDialog.s: client/src/clientDialog.cpp.s
+.PHONY : client/src/clientDialog.s
+
+# target to generate assembly for a file
+client/src/clientDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/clientDialog.cpp.s
+.PHONY : client/src/clientDialog.cpp.s
+
+client/src/main.o: client/src/main.cpp.o
+.PHONY : client/src/main.o
+
+# target to build an object file
+client/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.o
+.PHONY : client/src/main.cpp.o
+
+client/src/main.i: client/src/main.cpp.i
+.PHONY : client/src/main.i
+
+# target to preprocess a source file
+client/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.i
+.PHONY : client/src/main.cpp.i
+
+client/src/main.s: client/src/main.cpp.s
+.PHONY : client/src/main.s
+
+# target to generate assembly for a file
+client/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/src/main.cpp.s
+.PHONY : client/src/main.cpp.s
+
+client_autogen/mocs_compilation.o: client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.o
+
+# target to build an object file
+client_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.cpp.o
+
+client_autogen/mocs_compilation.i: client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+client_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.cpp.i
+
+client_autogen/mocs_compilation.s: client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+client_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.cpp.s
+
 custom/src/customLineEdit.o: custom/src/customLineEdit.cpp.o
 .PHONY : custom/src/customLineEdit.o
 
 # target to build an object file
 custom/src/customLineEdit.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/custom/src/customLineEdit.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/customLineEdit.cpp.o
 .PHONY : custom/src/customLineEdit.cpp.o
 
 custom/src/customLineEdit.i: custom/src/customLineEdit.cpp.i
@@ -156,6 +279,7 @@ custom/src/customLineEdit.i: custom/src/customLineEdit.cpp.i
 # target to preprocess a source file
 custom/src/customLineEdit.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/custom/src/customLineEdit.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/customLineEdit.cpp.i
 .PHONY : custom/src/customLineEdit.cpp.i
 
 custom/src/customLineEdit.s: custom/src/customLineEdit.cpp.s
@@ -164,7 +288,35 @@ custom/src/customLineEdit.s: custom/src/customLineEdit.cpp.s
 # target to generate assembly for a file
 custom/src/customLineEdit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/custom/src/customLineEdit.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/customLineEdit.cpp.s
 .PHONY : custom/src/customLineEdit.cpp.s
+
+message/src/messageHandler.o: message/src/messageHandler.cpp.o
+.PHONY : message/src/messageHandler.o
+
+# target to build an object file
+message/src/messageHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/src/messageHandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/message/src/messageHandler.cpp.o
+.PHONY : message/src/messageHandler.cpp.o
+
+message/src/messageHandler.i: message/src/messageHandler.cpp.i
+.PHONY : message/src/messageHandler.i
+
+# target to preprocess a source file
+message/src/messageHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/src/messageHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/message/src/messageHandler.cpp.i
+.PHONY : message/src/messageHandler.cpp.i
+
+message/src/messageHandler.s: message/src/messageHandler.cpp.s
+.PHONY : message/src/messageHandler.s
+
+# target to generate assembly for a file
+message/src/messageHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/src/messageHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/message/src/messageHandler.cpp.s
+.PHONY : message/src/messageHandler.cpp.s
 
 server/src/main.o: server/src/main.cpp.o
 .PHONY : server/src/main.o
@@ -238,6 +390,30 @@ server/src/serverDialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/serverDialog.cpp.s
 .PHONY : server/src/serverDialog.cpp.s
 
+server/src/user.o: server/src/user.cpp.o
+.PHONY : server/src/user.o
+
+# target to build an object file
+server/src/user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/user.cpp.o
+.PHONY : server/src/user.cpp.o
+
+server/src/user.i: server/src/user.cpp.i
+.PHONY : server/src/user.i
+
+# target to preprocess a source file
+server/src/user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/user.cpp.i
+.PHONY : server/src/user.cpp.i
+
+server/src/user.s: server/src/user.cpp.s
+.PHONY : server/src/user.s
+
+# target to generate assembly for a file
+server/src/user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/src/user.cpp.s
+.PHONY : server/src/user.cpp.s
+
 server_autogen/mocs_compilation.o: server_autogen/mocs_compilation.cpp.o
 .PHONY : server_autogen/mocs_compilation.o
 
@@ -262,6 +438,30 @@ server_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.s
 .PHONY : server_autogen/mocs_compilation.cpp.s
 
+thread/src/receiverThread.o: thread/src/receiverThread.cpp.o
+.PHONY : thread/src/receiverThread.o
+
+# target to build an object file
+thread/src/receiverThread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/thread/src/receiverThread.cpp.o
+.PHONY : thread/src/receiverThread.cpp.o
+
+thread/src/receiverThread.i: thread/src/receiverThread.cpp.i
+.PHONY : thread/src/receiverThread.i
+
+# target to preprocess a source file
+thread/src/receiverThread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/thread/src/receiverThread.cpp.i
+.PHONY : thread/src/receiverThread.cpp.i
+
+thread/src/receiverThread.s: thread/src/receiverThread.cpp.s
+.PHONY : thread/src/receiverThread.s
+
+# target to generate assembly for a file
+thread/src/receiverThread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/thread/src/receiverThread.cpp.s
+.PHONY : thread/src/receiverThread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,11 +470,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... client_autogen"
 	@echo "... server_autogen"
+	@echo "... client"
 	@echo "... server"
+	@echo "... client/src/client.o"
+	@echo "... client/src/client.i"
+	@echo "... client/src/client.s"
+	@echo "... client/src/clientDialog.o"
+	@echo "... client/src/clientDialog.i"
+	@echo "... client/src/clientDialog.s"
+	@echo "... client/src/main.o"
+	@echo "... client/src/main.i"
+	@echo "... client/src/main.s"
+	@echo "... client_autogen/mocs_compilation.o"
+	@echo "... client_autogen/mocs_compilation.i"
+	@echo "... client_autogen/mocs_compilation.s"
 	@echo "... custom/src/customLineEdit.o"
 	@echo "... custom/src/customLineEdit.i"
 	@echo "... custom/src/customLineEdit.s"
+	@echo "... message/src/messageHandler.o"
+	@echo "... message/src/messageHandler.i"
+	@echo "... message/src/messageHandler.s"
 	@echo "... server/src/main.o"
 	@echo "... server/src/main.i"
 	@echo "... server/src/main.s"
@@ -284,9 +501,15 @@ help:
 	@echo "... server/src/serverDialog.o"
 	@echo "... server/src/serverDialog.i"
 	@echo "... server/src/serverDialog.s"
+	@echo "... server/src/user.o"
+	@echo "... server/src/user.i"
+	@echo "... server/src/user.s"
 	@echo "... server_autogen/mocs_compilation.o"
 	@echo "... server_autogen/mocs_compilation.i"
 	@echo "... server_autogen/mocs_compilation.s"
+	@echo "... thread/src/receiverThread.o"
+	@echo "... thread/src/receiverThread.i"
+	@echo "... thread/src/receiverThread.s"
 .PHONY : help
 
 

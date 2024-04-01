@@ -312,6 +312,9 @@ CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/CIAW6PGLSA/../../../server/include/../include/user.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/CIAW6PGLSA/moc_serverDialog.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/CIAW6PGLSA/../../../server/include/serverDialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \

@@ -2,6 +2,7 @@
   /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/moc_predefs.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/customLineEdit.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/server/include/server.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/server/include/user.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
@@ -242,6 +243,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h \

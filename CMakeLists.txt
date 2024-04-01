@@ -13,6 +13,7 @@ find_package(Qt5 COMPONENTS
         Core
         Gui
         Widgets
+        Network
         REQUIRED)
 
 add_executable(server
@@ -25,11 +26,38 @@ add_executable(server
         server/src/server.cpp
 
         server/src/main.cpp
+        message/include/messageHandler.h
+        message/src/messageHandler.cpp
+        server/include/user.h
+        server/src/user.cpp
 )
 
 target_link_libraries(server
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
+        Qt5::Network
+)
+
+add_executable(client
+        client/include/clientDialog.h
+        custom/include/customLineEdit.h
+        client/include/client.h
+
+        custom/src/customLineEdit.cpp
+        client/src/clientDialog.cpp
+        client/src/client.cpp
+        client/src/main.cpp
+        message/include/messageHandler.h
+        message/src/messageHandler.cpp
+        thread/include/receiverThread.h
+        thread/src/receiverThread.cpp
+)
+
+target_link_libraries(client
+        Qt5::Core
+        Qt5::Gui
+        Qt5::Widgets
+        Qt5::Network
 )
 

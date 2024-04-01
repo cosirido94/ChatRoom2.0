@@ -1,4 +1,5 @@
 #ifndef SERVERCONFIGDIALOG_H
+
 #define SERVERCONFIGDIALOG_H
 
 #include <QDialog>
@@ -23,6 +24,9 @@ private:
     QLabel *serverStatusLabel;
     QLabel *statusIndicator;
     Server *myServer;
+
+private:
+    void clearServer();
 
 private slots:
     void toggleServer();
