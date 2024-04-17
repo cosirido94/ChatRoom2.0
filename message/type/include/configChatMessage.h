@@ -1,0 +1,8 @@
+//
+// Created by ilcondor on 10/04/24.
+//
+
+#ifndef CHATROOM_CONFIGCHATMESSAGE_H
+#define CHATROOM_CONFIGCHATMESSAGE_H
+
+#endif //CHATROOM_CONFIGCHATMESSAGE_H
