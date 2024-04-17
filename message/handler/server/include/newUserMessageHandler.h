@@ -1,9 +1,9 @@
 #ifndef CHATROOM_NEWUSERMESSAGEHANDLER_H
 #define CHATROOM_NEWUSERMESSAGEHANDLER_H
 
-#include "../include/messageHandler.h"
+#include "../include/serverMessageHandler.h"
 
-class NewUserMessageHandler : public MessageHandler
+class NewUserMessageHandler : public ServerMessageHandler
 {
 public:
     NewUserMessageHandler() = default;

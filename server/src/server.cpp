@@ -1,11 +1,18 @@
 #include "../include/server.h"
-#include "../message/include/messageHandler.h"
+#include "../../message/type/include/broadcastUserDisconnectedMessage.h"
+#include "../../message/handler/server/include/newUserMessageHandler.h"
+#include "../../message/handler/server/include/chatroomReadyMessageHandler.h"
+#include "../../message/handler/server/include/chatroomTextMessageHandler.h"
+#include "../../message/parser/include/messageParser.h"
 #include <QDataStream>
 #include <QRandomGenerator>
+
+Server* Server::instance = nullptr;
 
 Server::Server(const QString &ipAddress, const quint16 port)
 {
     configureServer(ipAddress , port);
+    instance = this;
 }
 
 void Server::configureServer( const QString &ipAddress, const quint16 port )
@@ -25,6 +32,9 @@ void Server::configureServer( const QString &ipAddress, const quint16 port )
     }
 //    nClientConnected = 0;
     setUserColors();
+    serverMessageHandlers["NEW_USER"] = std::make_shared<NewUserMessageHandler>();
+    serverMessageHandlers["CHATROOM_READY"] = std::make_shared<ChatRoomReadyMessageHandler>();
+    serverMessageHandlers["CHATROOM_MESSAGE"] = std::make_shared<ChatRooomTextMessageHandler>();
 }
 
 void Server::setUserColors()
@@ -60,6 +70,7 @@ void Server::handleNewConnection()
         connect(clientSocket, &QTcpSocket::readyRead, this, [=]() {
             readClientData(clientSocket);
         });
+        connect( clientSocket , &QTcpSocket::disconnected , this , &Server::disconnectClient);
     }
 }
 
@@ -67,7 +78,6 @@ void Server::readClientData(QTcpSocket *client)
 {
     if (client->bytesAvailable() > 0)
     {
-        // Crea un flusso di dati e collegalo alla socket
 
         QDataStream in(client);
         in.setVersion(QDataStream::Qt_5_15);
@@ -75,36 +85,48 @@ void Server::readClientData(QTcpSocket *client)
         QString message;
         in >> message;
 
-        QString header = MessageHandler::extractHeader(message);
+        qDebug() << "Server riceve messaggio : " << message;
 
-        if( header != QString() )
-        {
-            QString messageBody = MessageHandler::extractMessage(message);
-            handleMessage(header , messageBody , client);
-        }
+        QString header = MessageParser::extractHeader(message);
+//        QString body = MessageParser::extractBody(message);
+        handleMessage(header, message, client);
     }
 }
 
 void Server::handleMessage(const QString header , const QString message , QTcpSocket* client )
 {
-    if ( header == "NEW_USER" )
+    auto it = serverMessageHandlers.find(header);
+    if (it != serverMessageHandlers.end())
     {
-        if ( isNickNameAvaialable(client,message) )
-        {
-            registerNewUser(client,message);
+        it.value()->handleMessage(message,client);
+    }
+    else
+    {
+        // Gestisci caso in cui l'header non è riconosciuto
+    }
+}
 
-            QColor clientColor = usersMap.value(client).getColor();
-            QString colorString = clientColor.name();
-            QString messageColor = MessageHandler::addHeader(colorString,2);
-            sendToClient(client,messageColor);
-            qDebug() << "Invio del colore ";
-        }
-        else
-        {
-            QString messageError = MessageHandler::addHeader("",3);
-            sendToClient(client,messageError);
-            qDebug() << "Invio messaggio di errore nickname non disponibile";
-        }
+void Server::disconnectClient()
+{
+    QTcpSocket* disconnectedClient = qobject_cast<QTcpSocket*>(sender());
+
+    if (disconnectedClient && usersMap.contains(disconnectedClient) )
+    {
+        User userInfo = usersMap.value(disconnectedClient);
+
+        QColor clientColor = userInfo.getColor();
+        QString userName = userInfo.getNickName();
+        userColors.append(clientColor);
+
+        usersMap.remove(disconnectedClient);
+        /*** Dovrà essere mandato un messaggio di broadcast a tutti i client connessi ***/
+
+        disconnectedClient->deleteLater();
+
+        qDebug() << "Client " << userName << " disconnected";
+
+        QString broadCastUserDisconnectedMsg = BroadCastUserDisconnectedMessage(userName,clientColor).serialize();
+        sendBroadCastMessage(broadCastUserDisconnectedMsg);
     }
 }
 
@@ -207,11 +229,34 @@ bool Server::isNickNameAvaialable(QTcpSocket* client,const QString &nickname)
 void Server::printUsersList()
 {
     QMap<QTcpSocket*, User>::const_iterator it;
-    for (it = usersMap.constBegin(); it != usersMap.constEnd(); ++it) {
+    for (it = usersMap.constBegin(); it != usersMap.constEnd(); ++it)
+    {
         qDebug() << "Socket:" << it.key() << "Nickname:" << it.value().getNickName() << "Color:" << it.value().getColor();
     }
 }
 
+Server* Server::getInstance()
+{
+    if(!instance)
+    {
+        qDebug() << "Errore: Nessuna istanza del server è stata creata!";
+        return nullptr;
+    }
+    return instance;
+}
+QMap<QTcpSocket*,User> Server::getUsersMap()
+{
+    return usersMap;
+}
+
+void Server::sendBroadCastMessage(const QString &message)
+{
+    for ( QTcpSocket* receiver : usersMap.keys() )
+    {
+        sendToClient(receiver,message);
+        qDebug() << "Invio broadcast a " << usersMap.value(receiver).getNickName();
+    }
+}
 
 
 /**** ****/

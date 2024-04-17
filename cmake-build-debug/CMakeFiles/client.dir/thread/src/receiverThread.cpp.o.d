@@ -270,8 +270,6 @@ CMakeFiles/client.dir/thread/src/receiverThread.cpp.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/include/messageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/thread/src/../../message/parser/include/messageParser.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h

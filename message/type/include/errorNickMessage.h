@@ -1,7 +1,7 @@
 #ifndef CHATROOM_ERRORNICKMESSAGE_H
 #define CHATROOM_ERRORNICKMESSAGE_H
 
-#include "../include/message.h"
+#include "message.h"
 
 class ErrorNickMessage : public Message
 {

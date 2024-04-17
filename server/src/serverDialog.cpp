@@ -27,12 +27,16 @@ ServerDialog::ServerDialog(QWidget *parent) : QDialog(parent)
 
     ipEdit = new CustomLineEdit(this);
     ipEdit->setPlaceholderText("Enter IP Address");
+    ipEdit->setText("127.0.0.1");
+    ipEdit->setCheckMark(true);
 
     portLabel = new QLabel("Port Number:", this);
     portLabel->setObjectName("portLabel");
 
     portEdit = new CustomLineEdit(this);
     portEdit->setPlaceholderText("Enter Port Number");
+    portEdit->setText("8081");
+    portEdit->setCheckMark(true);
 
     serverStatusLabel = new QLabel("Server status");
     serverStatusLabel->setObjectName("serverStatusLabel");

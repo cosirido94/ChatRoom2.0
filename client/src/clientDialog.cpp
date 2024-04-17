@@ -21,12 +21,16 @@ ClientDialog::ClientDialog(QWidget *parent) : QDialog(parent)
 
     ipEdit = new CustomLineEdit(this);
     ipEdit->setPlaceholderText("Enter IP Address");
+    ipEdit->setText("127.0.0.1");
+    ipEdit->setCheckMark(true);
 
     portLabel = new QLabel("Port Number:",this);
     portLabel->setObjectName("portLabel");
 
     portEdit = new CustomLineEdit(this);
     portEdit->setPlaceholderText("Enter Port Number");
+    portEdit->setText("8081");
+    portEdit->setCheckMark(true);
 
     nickNameLabel = new QLabel("Nickname");
     nickNameLabel->setObjectName("nickNameLabel");
@@ -111,6 +115,7 @@ void ClientDialog::updateProgress()
         connect(myClient, &Client::connectionEstablished, this, &ClientDialog::onConnectionEstablished);
         connect(myClient , &Client::connectionError , this , &ClientDialog::onConnectionError);
         connect(myClient , &Client::showMessageClientNotAvailable , this , &ClientDialog::onShowMessageClientNotAvailable);
+        connect(myClient , &Client::shutClientDialog , this , &ClientDialog::onShutClientDialog);
         myClient->connectToServer(getServerAddress() , getServerPort() );
     }
     else
@@ -263,4 +268,9 @@ void ClientDialog::enableButton()
 void ClientDialog::disableButton()
 {
     connectButton->setEnabled(false);
+}
+
+void ClientDialog::onShutClientDialog()
+{
+    this->close();
 }

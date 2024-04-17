@@ -1,7 +1,7 @@
 #ifndef CHATROOM_ERRORNICKMESSAGEHANDLER_H
 #define CHATROOM_ERRORNICKMESSAGEHANDLER_H
 
-#include "../client/include/clientMessageHandler.h"
+#include "../include/clientMessageHandler.h"
 #include <QObject>
 class ErrorNickMessageHandler : public QObject , public ClientMessageHandler
 {

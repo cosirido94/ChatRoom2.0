@@ -1,6 +1,7 @@
 #include "../include/receiverThread.h"
 #include <QDataStream>
-#include "../message/include/messageHandler.h"
+//#include "../../message/handler/server/include/messageHandler.h"
+#include "../../message/parser/include/messageParser.h"
 
 
 ReceiverThread::ReceiverThread(QTcpSocket *socket, QObject *parent)
@@ -34,13 +35,18 @@ void ReceiverThread::readData()
         QString message;
         in >> message;
 
-        QString header = MessageHandler::extractHeader(message);
+        QString header = MessageParser::extractHeader(message);
+        QString body = MessageParser::extractBody(message);
 
-        if( header != QString() )
-        {
-            QString messageBody = MessageHandler::extractMessage(message);
-            handleMessage(header,message);
-        }
+        qDebug() << "ReceiverThread: Ho ricevuto un messaggio " << message;
+        emit messageReceived(header , message);
+//        QString header = MessageHandler::extractHeader(message);
+//
+//        if( header != QString() )
+//        {
+//            QString messageBody = MessageHandler::extractMessage(message);
+//            handleMessage(header,message);
+//        }
     }
 }
 

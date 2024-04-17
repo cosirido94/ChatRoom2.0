@@ -1,5 +1,6 @@
 /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/CIAW6PGLSA/moc_server.cpp: /home/ilcondor/Documents/Project\ C++/ChatRoom/server/include/server.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/server_autogen/moc_predefs.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/server/include/serverMessageHandler.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/server/include/user.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -322,6 +322,8 @@ CMakeFiles/server.dir/server/src/main.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../../message/handler/server/include/serverMessageHandler.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \

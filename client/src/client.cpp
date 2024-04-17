@@ -1,6 +1,17 @@
-#include "../include/client.h"
 #include <QDataStream>
-#include "../message/include/messageHandler.h"
+#include "../include/client.h"
+#include "../../message/handler/client/include/clientMessageHandler.h"
+#include "../../message/type/include/newUserMessage.h"
+#include "../../message/type/include/chatroomReadyMessage.h"
+#include "../../message/type/include/chatroomTextMessage.h"
+#include "../../message/handler/client/include/errorNickMessageHandler.h"
+#include "../../message/handler/client/include/configChatMessageHandler.h"
+#include "../../message/handler/client/include/broadcastUserConnectedMessageHandler.h"
+#include "../../message/handler/client/include/broadcastUserDisconnectedMessageHandler.h"
+#include "../../message/handler/client/include/chatroomTextMessageReceivedHandler.h"
+
+
+Client * Client::instance = nullptr;
 
 Client::Client(QString nickname, QObject *parent)
 {
@@ -10,14 +21,27 @@ Client::Client(QString nickname, QObject *parent)
     connect(socket,&QTcpSocket::connected,this,&Client::onConnected);
     connect(socket , &QTcpSocket::errorOccurred , this , &Client::onConnectionError);
 
-    receiverThread = new ReceiverThread(socket,this);
-    connect(receiverThread , &ReceiverThread::nickNameNotAvaiable , this , &Client::onNickNameNotAvailable);
+    clientMessageHandlers["ERROR_NICK"] = std::make_shared<ErrorNickMessageHandler>();
+    clientMessageHandlers["CONFIG_CHAT"] = std::make_shared<ConfigChatMessageHandler>();
+    clientMessageHandlers["BROADCAST_USER_CONNECTED"] = std::make_shared<BroadcastUserConnectedMessageHandler>();
+    clientMessageHandlers["BROADCAST_USER_DISCONNECTED"] = std::make_shared<BroadCastUserDisconnectedMessageHandler>();
+    clientMessageHandlers["CHATROOM_MESSAGE"] = std::make_shared<ChatRoomTextMessageReceivedHandler>();
 
+    receiverThread = new ReceiverThread(socket,this);
+//    connect(receiverThread , &ReceiverThread::nickNameNotAvaiable , this , &Client::onNickNameNotAvailable);
+    connect(receiverThread , &ReceiverThread::messageReceived , this , &Client::handleMessage);
+    auto errorNickHandler = std::dynamic_pointer_cast<ErrorNickMessageHandler>(clientMessageHandlers["ERROR_NICK"]);
+    auto configChatHandler = std::dynamic_pointer_cast<ConfigChatMessageHandler>(clientMessageHandlers["CONFIG_CHAT"]);
+    connect(errorNickHandler.get(), &ErrorNickMessageHandler::notifyClient , this ,&Client::onNickNameNotAvailable );
+    connect(configChatHandler.get(), &ConfigChatMessageHandler::notifyCloseClientDialog , this , &Client::closeClientDialog );
+    instance = this;
+    chatRoom = nullptr;
 //    receiverThread = new ReceiverThread(socket);
 //    receiverThread->start();
 //    receiverThread = new ReceiverThread(socket,this);
 //    connect(receiverThread , &ReceiverThread::nickNameNotAvaiable , this , &Client::onNickNameNotAvailable);
 //    receiverThread->start();
+
 
 }
 
@@ -34,9 +58,12 @@ void Client::onConnected()
 //    connect(receiverThread , &ReceiverThread::nickNameNotAvaiable , this , &Client::onNickNameNotAvailable);
     receiverThread->start();
 
-    QString messageToSend = MessageHandler::addHeader(nickname,1);
+//    QString messageToSend = MessageHandler::addHeader(nickname,1);
+    QString newUserMsg = NewUserMessage(nickname).serialize();
+    qDebug () << "Messaggio inviato "<< newUserMsg;
 
-    sendToServer(socket,messageToSend);
+//    sendToServer(socket,messageToSend);
+    sendToServer(socket,newUserMsg);
 
     emit connectionEstablished();
 }
@@ -107,4 +134,71 @@ ReceiverThread* Client::getReceiverThread()
 QTcpSocket* Client::getSocket()
 {
     return socket;
+}
+
+void Client::handleMessage(const QString header, const QString message)
+{
+    auto it = clientMessageHandlers.find(header);
+    if( it != clientMessageHandlers.end() )
+    {
+        it.value()->handleMessage(message);
+    }
+    else
+    {
+        // Gestisci caso in cui l'header non è riconosciuto
+    }
+}
+
+Client* Client::getInstance()
+{
+    if(!instance)
+    {
+        qDebug() << "Errore: Nessuna istanza del Client è stata creata!";
+        return nullptr;
+    }
+    return instance;
+}
+ChatRoom* Client::getChatRoom()
+{
+    return chatRoom;
+}
+
+QString Client::getNickName()
+{
+    return nickname;
+}
+
+void Client::setChatRoom(ChatRoom *chatroom)
+{
+    this->chatRoom = chatroom;
+}
+
+
+void Client::closeClientDialog()
+{
+    emit shutClientDialog();
+    openChatRoom();
+}
+
+void Client::openChatRoom()
+{
+    connect(chatRoom , &ChatRoom::chatRoomReady , this , &Client::sendChatRoomReady);
+    connect(chatRoom , &ChatRoom::messageSent , this , &Client::sendChatRoomMessage);
+
+    chatRoom->configureChatRoom();
+    chatRoom->show();
+}
+
+void Client::sendChatRoomReady( QColor userColor )
+{
+    QString chatRoomReadyMsg = ChatRoomReadyMessage(nickname,userColor).serialize();
+    sendToServer(socket,chatRoomReadyMsg);
+    qDebug () << "Messaggio ChatRoom READY "<< chatRoomReadyMsg;
+}
+
+void Client::sendChatRoomMessage(const QColor userColor,const QString message)
+{
+    QString chatroomTextMsg = ChatRoomTextMessage(nickname,userColor,message).serialize();
+    sendToServer(socket,chatroomTextMsg);
+    qDebug() << "Messaggio di testo inviato ";
 }

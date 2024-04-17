@@ -2,7 +2,7 @@
 #define CHATROOM_CLIENTMESSAGEHANDLER_H
 
 #include <QString>
-
+#include <QTcpSocket>
 class ClientMessageHandler
 {
 

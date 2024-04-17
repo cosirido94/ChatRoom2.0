@@ -1,7 +1,7 @@
 #ifndef CHATROOM_NEWUSERMESSAGE_H
 #define CHATROOM_NEWUSERMESSAGE_H
 
-#include "../include/message.h"
+#include "message.h"
 
 class NewUserMessage : public Message
 {
@@ -12,6 +12,7 @@ private:
 public:
     NewUserMessage(const QString& nickname);
     virtual QString serialize() const override;
+    static NewUserMessage deserialize(const QString& serializedMessage);
     QString getNickName() const;
 };
 

@@ -15,11 +15,11 @@
 #include <QString>
 #include <QTcpSocket>
 
-class MessageHandler
+class ServerMessageHandler
 {
 public:
     virtual void handleMessage(const QString& message, QTcpSocket* client) = 0;
-    virtual ~MessageHandler() {}
+    virtual ~ServerMessageHandler() {}
 };
 
 #endif //CHATROOM_MESSAGEHANDLER_H

@@ -51,6 +51,7 @@ private slots:
     void onShowMessageClientNotAvailable();
     void validateAddress( const QString &ipAddress );
     void validatePort( const QString &port );
+    void onShutClientDialog();
 
 };
 

@@ -1,4 +1,4 @@
-#include "../include/messageHandler.h"
+#include "../include/serverMessageHandler.h"
 
 
 //QMap<int,QString> MessageHandler::headers =

@@ -315,6 +315,8 @@ CMakeFiles/server.dir/server/src/serverDialog.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../../message/handler/server/include/serverMessageHandler.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \

@@ -273,9 +273,17 @@ CMakeFiles/server.dir/server/src/server.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/include/messageHandler.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../include/../../message/handler/server/include/serverMessageHandler.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/type/include/broadcastUserDisconnectedMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/type/include/message.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/handler/server/include/newUserMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/handler/server/include/../include/serverMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/handler/server/include/chatroomReadyMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/handler/server/include/chatroomTextMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/server/src/../../message/parser/include/messageParser.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QRandomGenerator \

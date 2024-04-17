@@ -3,35 +3,35 @@
 	"CMAKE_BINARY_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom",
-	"CMAKE_EXECUTABLE" : "/snap/clion/265/bin/cmake/linux/x64/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/snap/clion/274/bin/cmake/linux/x64/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/ilcondor/Documents/Project C++/ChatRoom/CMakeLists.txt",
-		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake",
-		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake",
-		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake",
+		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake",
+		"/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -40,7 +40,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseArguments.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
@@ -72,7 +72,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseArguments.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake",
@@ -80,8 +80,8 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/ilcondor/Documents/Project C++/ChatRoom",
-	"DEP_FILE" : "",
-	"DEP_FILE_RULE_NAME" : "",
+	"DEP_FILE" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "server_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
@@ -91,9 +91,81 @@
 			null
 		],
 		[
-			"/home/ilcondor/Documents/Project C++/ChatRoom/message/include/messageHandler.h",
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/include/chatroomReadyMessageHandler.h",
 			"MU",
-			"NUAYT2GJ5V/moc_messageHandler.cpp",
+			"I3DZ7DKQMX/moc_chatroomReadyMessageHandler.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/include/chatroomTextMessageHandler.h",
+			"MU",
+			"I3DZ7DKQMX/moc_chatroomTextMessageHandler.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/include/newUserMessageHandler.h",
+			"MU",
+			"I3DZ7DKQMX/moc_newUserMessageHandler.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/include/serverMessageHandler.h",
+			"MU",
+			"I3DZ7DKQMX/moc_serverMessageHandler.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/parser/include/messageParser.h",
+			"MU",
+			"G3JYBUN2UF/moc_messageParser.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/broadcastUserConnectedMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_broadcastUserConnectedMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/broadcastUserDisconnectedMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_broadcastUserDisconnectedMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/chatroomReadyMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_chatroomReadyMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/chatroomTextMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_chatroomTextMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/configChatMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_configChatMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/errorNickMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_errorNickMessage.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/message.h",
+			"MU",
+			"ZJGPWQIJVN/moc_message.cpp",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/include/newUserMessage.h",
+			"MU",
+			"ZJGPWQIJVN/moc_newUserMessage.cpp",
 			null
 		],
 		[
@@ -152,7 +224,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+		"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
@@ -173,7 +245,57 @@
 			null
 		],
 		[
-			"/home/ilcondor/Documents/Project C++/ChatRoom/message/src/messageHandler.cpp",
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/src/chatroomReadyMessageHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/src/chatroomTextMessageHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/handler/server/src/newUserMessageHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/parser/src/messageParser.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/broadcastUserConnectedMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/broadcastUserDisconnectedMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/chatRoomReadyMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/chatroomTextMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/configChatMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/errorNickMessage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ilcondor/Documents/Project C++/ChatRoom/message/type/src/newUserMessage.cpp",
 			"MU",
 			null
 		],

@@ -1,7 +1,8 @@
 #include "../include/newUserMessageHandler.h"
-#include "../include/newUserMessage.h"
-#include "../include/errorNickMessage.h"
-#include "../server/include/server.h"
+#include "../../../type/include/newUserMessage.h"
+#include "../../../type/include/errorNickMessage.h"
+#include "../../../type/include/configChatMessage.h"
+#include "../../../../server/include/server.h"
 
 void NewUserMessageHandler::handleMessage(const QString& message, QTcpSocket *client)
 {
@@ -12,15 +13,24 @@ void NewUserMessageHandler::handleMessage(const QString& message, QTcpSocket *cl
         return;
     }
 
-    NewUserMessage newUserMsg(message);
+    NewUserMessage newUserMsg = NewUserMessage::deserialize(message);
     QString nickname = newUserMsg.getNickName();
-    qDebug() << "Messaggio ricevuto dal client " << message;
-    qDebug() << "Nickname: " << nickname;
 
     if(serverInstance->isNickNameAvaialable(client,nickname) )
     {
         serverInstance->registerNewUser(client,nickname);
         qDebug() << "Utente registrato";
+        QMap<QTcpSocket*,User> usersMap = serverInstance->getUsersMap();
+        QColor clientColor = usersMap.value(client).getColor();
+
+        QList<User> userList;
+        for(const User& user : usersMap)
+        {
+            userList.append(user);
+        }
+        QString configChatMessage = ConfigChatMessage(clientColor,userList).serialize();
+        qDebug() << "Invio messaggio di config " + configChatMessage;
+        serverInstance->sendToClient(client,configChatMessage);
     }
     else
     {
@@ -28,5 +38,4 @@ void NewUserMessageHandler::handleMessage(const QString& message, QTcpSocket *cl
         qDebug() << "Invio messaggio di errore " << errorNickMsg;
         serverInstance->sendToClient(client,errorNickMsg);
     }
-
 }

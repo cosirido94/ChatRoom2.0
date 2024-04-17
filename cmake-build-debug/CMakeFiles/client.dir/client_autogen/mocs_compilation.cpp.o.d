@@ -1,7 +1,7 @@
 CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_client.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_chatroom.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -117,11 +117,11 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/chatroom.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/c++/11/cstddef /usr/include/assert.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h \
@@ -167,7 +167,15 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
@@ -242,47 +250,6 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
- /usr/include/c++/11/variant \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../thread/include/receiverThread.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qdeadlinetimer.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
- /usr/include/c++/11/future /usr/include/c++/11/mutex \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h \
- /usr/include/c++/11/condition_variable \
- /usr/include/c++/11/bits/atomic_futex.h \
- /usr/include/c++/11/bits/std_thread.h \
- /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_clientDialog.cpp \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/clientDialog.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h \
@@ -297,30 +264,121 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/c++/11/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollArea \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollBar \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/sortedListWidget.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/clickLabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/messageWidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserConnectedMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/message.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_client.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpSocket \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../thread/include/receiverThread.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /usr/include/c++/11/bits/std_thread.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/../../message/handler/client/include/clientMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../chatroom/include/chatroom.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_clientDialog.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/clientDialog.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QProgressBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qprogressbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
@@ -330,7 +388,32 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_clickLabel.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/clickLabel.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_customLineEdit.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/customLineEdit.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_messageWidget.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/messageWidget.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_sortedListWidget.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/sortedListWidget.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_broadcastUserConnectedMessageHandler.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/broadcastUserConnectedMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/clientMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../type/include/broadcastUserConnectedMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../../chatroom/include/chatroom.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_broadcastUserDisconnectedMessageHandler.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/broadcastUserDisconnectedMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../type/include/broadcastUserDisconnectedMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatroom.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_chatroomTextMessageReceivedHandler.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/chatroomTextMessageReceivedHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_configChatMessageHandler.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/configChatMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../include/clientMessageHandler.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../type/include/configChatMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/../../../type/include/message.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_errorNickMessageHandler.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/errorNickMessageHandler.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/VN52CJCQEB/moc_receiverThread.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/VN52CJCQEB/../../../thread/include/receiverThread.h

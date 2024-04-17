@@ -29,6 +29,7 @@ private:
 
 signals:
     void nickNameNotAvaiable();
+    void messageReceived(const QString header ,const QString message);
 };
 
 #endif //CHATROOM_RECEIVERTHREAD_H
