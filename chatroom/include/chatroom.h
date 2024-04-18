@@ -54,6 +54,7 @@ signals:
 
 private slots:
     void onClickSendMessage();
+    void handleMessageIconClicked(const QString& nickname);
 };
 
 

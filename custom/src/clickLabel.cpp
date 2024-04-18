@@ -1,7 +1,7 @@
 #include "../include/clickLabel.h"
 
-ClickLabel::ClickLabel(const QString &text, QWidget *parent)
-    : QLabel(text,parent)
+ClickLabel::ClickLabel( QWidget *parent)
+    : QLabel(parent)
 {
     setMouseTracking(true);
 }
@@ -16,4 +16,9 @@ void ClickLabel::mousePressEvent(QMouseEvent *event)
 {
     emit clicked();
     QLabel::mousePressEvent(event);
+}
+
+void ClickLabel::setText(const QString &text)
+{
+    QLabel::setText(text);
 }

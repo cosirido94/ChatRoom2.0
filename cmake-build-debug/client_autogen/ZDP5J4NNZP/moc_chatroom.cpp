@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ChatRoom_t {
-    QByteArrayData data[8];
-    char stringdata0[85];
+    QByteArrayData data[10];
+    char stringdata0[119];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,12 +39,15 @@ QT_MOC_LITERAL(3, 24, 9), // "userColor"
 QT_MOC_LITERAL(4, 34, 11), // "messageSent"
 QT_MOC_LITERAL(5, 46, 11), // "colorSender"
 QT_MOC_LITERAL(6, 58, 7), // "message"
-QT_MOC_LITERAL(7, 66, 18) // "onClickSendMessage"
+QT_MOC_LITERAL(7, 66, 18), // "onClickSendMessage"
+QT_MOC_LITERAL(8, 85, 24), // "handleMessageIconClicked"
+QT_MOC_LITERAL(9, 110, 8) // "nickname"
 
     },
     "ChatRoom\0chatRoomReady\0\0userColor\0"
     "messageSent\0colorSender\0message\0"
-    "onClickSendMessage"
+    "onClickSendMessage\0handleMessageIconClicked\0"
+    "nickname"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,7 +57,7 @@ static const uint qt_meta_data_ChatRoom[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,11 +65,12 @@ static const uint qt_meta_data_ChatRoom[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   29,    2, 0x06 /* Public */,
-       4,    2,   32,    2, 0x06 /* Public */,
+       1,    1,   34,    2, 0x06 /* Public */,
+       4,    2,   37,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       7,    0,   37,    2, 0x08 /* Private */,
+       7,    0,   42,    2, 0x08 /* Private */,
+       8,    1,   43,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QColor,    3,
@@ -74,6 +78,7 @@ static const uint qt_meta_data_ChatRoom[] = {
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    9,
 
        0        // eod
 };
@@ -87,6 +92,7 @@ void ChatRoom::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 0: _t->chatRoomReady((*reinterpret_cast< QColor(*)>(_a[1]))); break;
         case 1: _t->messageSent((*reinterpret_cast< const QColor(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
         case 2: _t->onClickSendMessage(); break;
+        case 3: _t->handleMessageIconClicked((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -137,13 +143,13 @@ int ChatRoom::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

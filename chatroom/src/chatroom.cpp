@@ -16,7 +16,8 @@ ChatRoom::ChatRoom(const QString nickname, const QColor userColor, const QList<U
     mainLayout = new QGridLayout(this);
 
     // Label ChatRoom
-    chatRoomLabel = new ClickLabel("ChatRoom", this);
+    chatRoomLabel = new ClickLabel(this);
+    chatRoomLabel->setText("ChatRoom");
     mainLayout->addWidget(chatRoomLabel, 0, 0, Qt::AlignLeft);
 
     // Label Message
@@ -25,6 +26,7 @@ ChatRoom::ChatRoom(const QString nickname, const QColor userColor, const QList<U
 
     mainLayout->setColumnStretch(0,1);
     // Lista Utenti Connessi
+
     userListWidget = new SortedListWidget(this);
     mainLayout->addWidget(userListWidget, 2, 2, 1, 1);  // Colonna 2, Row 2
 
@@ -70,44 +72,13 @@ ChatRoom::ChatRoom(const QString nickname, const QColor userColor, const QList<U
     // Imposta il layout principale della finestra
     setLayout(mainLayout);
 
-
-//    mainLayout = new QGridLayout(this);
-//
-//    scrollArea = new QScrollArea();
-//    chatDisplayContainer = new QWidget();
-//    chatDisplayLayout = new QVBoxLayout();
-//    chatDisplayContainer->setLayout(chatDisplayLayout);
-//    chatDisplayContainer->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
-//    scrollArea->setWidget(chatDisplayContainer);
-//    scrollArea->setWidgetResizable(true);
-//    mainLayout->addWidget(scrollArea, 0, 0, 6, 4);  // Row: 0, Col: 0, Row Span: 6, Col Span: 4
-//
-//    messageInput = new QLineEdit(this);
-//    mainLayout->addWidget(messageInput, 6, 0, 1, 2);  // Row: 6, Col: 0, Row Span: 1, Col Span: 2
-//
-//    sendButton = new QPushButton("Send", this);
-//    mainLayout->addWidget(sendButton, 6, 2, 1, 2);  // Row: 6, Col: 2, Row Span: 1, Col Span: 2
-//
-//    connectedUsersLabel = new QLabel("Connected Users: 0", this);
-//    mainLayout->addWidget(connectedUsersLabel, 0, 4, 1, 1);  // Row: 0, Col: 4, Row Span: 1, Col Span: 1
-//
-//    userSearchInput = new QLineEdit(this);
-//    mainLayout->addWidget(userSearchInput, 0, 5, 1, 1);  // Row: 0, Col: 5, Row Span: 1, Col Span: 1
-//
-//    userListWidget = new SortedListWidget(this);
-//    mainLayout->addWidget(userListWidget, 1, 4, 6, 1.5);
-//
-//    mainLayout->setColumnStretch(0, 6);
-//    mainLayout->setColumnStretch(4, 1);
-//    mainLayout->setHorizontalSpacing(20);
-//
-//    setLayout(mainLayout);
-
     connect(sendButton, &QPushButton::clicked, this, &ChatRoom::onClickSendMessage);
 
 //    connect(userSearchInput , &QLineEdit::textChanged , this , &ChatRoom::searchUsers);
     connect(messageInput, &QLineEdit::returnPressed, this, &ChatRoom::onClickSendMessage);
+    connect(userListWidget,&SortedListWidget::messageIconClicked , this , &ChatRoom::handleMessageIconClicked);
 
+    qDebug() << "userListWidget: " << userListWidget->size();
 }
 
 ChatRoom *ChatRoom::getInstance()
@@ -174,4 +145,9 @@ void ChatRoom::updateScrollBar()
 SortedListWidget* ChatRoom::getUserListWidget() const
 {
     return userListWidget;
+}
+
+void ChatRoom::handleMessageIconClicked(const QString &nickname)
+{
+    qDebug() << "Click detected! user " << nickname;
 }

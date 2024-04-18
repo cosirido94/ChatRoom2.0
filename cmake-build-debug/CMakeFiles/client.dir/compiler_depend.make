@@ -3203,6 +3203,7 @@ CMakeFiles/client.dir/custom/src/messageWidget.cpp.o: /home/ilcondor/Documents/P
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
 
 CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/src/sortedListWidget.cpp \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/clickLabel.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/sortedListWidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -3451,8 +3452,11 @@ CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o: /home/ilcondor/Document
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -3504,9 +3508,11 @@ CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o: /home/ilcondor/Document
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h \
@@ -3516,25 +3522,21 @@ CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o: /home/ilcondor/Document
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextBrowser \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
@@ -3556,8 +3558,6 @@ CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o: /home/ilcondor/Document
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextbrowser.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
@@ -8259,10 +8259,6 @@ CMakeFiles/client.dir/thread/src/receiverThread.cpp.o: /home/ilcondor/Documents/
 
 /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/src/broadcastUserDisconnectedMessageHandler.cpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextbrowser.h:
-
 /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/src/customLineEdit.cpp:
 
 /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/src/clickLabel.cpp:
@@ -8847,8 +8843,6 @@ client_autogen/ZDP5J4NNZP/moc_chatroom.cpp:
 
 /usr/include/c++/11/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h:
-
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
@@ -9166,8 +9160,6 @@ client_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextBrowser:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h:
 

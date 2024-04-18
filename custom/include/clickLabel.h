@@ -9,7 +9,8 @@ class ClickLabel : public QLabel
     Q_OBJECT
 
 public:
-    ClickLabel(const QString& text , QWidget *parent = nullptr);
+    ClickLabel( QWidget *parent = nullptr);
+    void setText(const QString &text);
 
 signals:
     void clicked();

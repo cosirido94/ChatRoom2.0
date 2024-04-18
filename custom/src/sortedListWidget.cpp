@@ -1,131 +1,154 @@
 #include "../include/sortedListWidget.h"
-#include <QTextBrowser>
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QDebug>
+#include "../include/clickLabel.h"
 
 SortedListWidget::SortedListWidget(QWidget *parent) : QListWidget(parent)
 {
 //    this->setSortingEnabled(true);
 //    sortList();
+    setSelectionMode(QAbstractItemView::NoSelection);
+
 }
 
 void SortedListWidget::addItem(const QString &nickname, const QString &color)
 {
-    QIcon messageIcon("img/message-icon.png");
-    QPixmap pixmap = messageIcon.pixmap(QSize(20, 20));
+    QWidget* listItemWidget = createListItemWidget(nickname,color);
 
-    // Create a widget to hold the user name and message icon
-    QWidget* listItemWidget = new QWidget();
-    QHBoxLayout* layout = new QHBoxLayout(listItemWidget);
-
-    // Create a label for the user name
-    QLabel* nameLabel = new QLabel(nickname);
-    nameLabel->setStyleSheet(QString("color: %1;").arg(color));
-
-    // Create a label for the message icon
-    QLabel* iconLabel = new QLabel();
-    iconLabel->setPixmap(pixmap);
-
-    // Add the user name label and message icon label to the layout
-    layout->addWidget(nameLabel);
-    layout->addSpacing(10); // Add some spacing between the user name and the message icon
-    layout->addWidget(iconLabel);
-
-    // Set the layout margins
-    layout->setContentsMargins(0, 0, 0, 0);
-
-    // Create a new list item
-    QListWidgetItem* item = new QListWidgetItem();
-    item->setSizeHint(QSize(100, 30)); // Set the size of the list item
-
-    // Insert the new item into the list widget
-    int index = 0;
-    while (index < count() && this->item(index)->text() < nickname)
-    {
-        ++index;
-    }
-    insertItem(index, item);
-    setItemWidget(item, listItemWidget);
-
-    // Update the list widget
-    update();
-
-    qDebug() << "Lista utenti dopo l'aggiunta di" << nickname << ":";
-    for (int i = 0; i < count(); ++i) {
-        if (this->item(i)) {
-            qDebug() << "Elemento" << i << ":" << this->item(i)->text();
-        } else {
-            qDebug() << "Elemento" << i << ": null";
-        }
-    }
-
+    QListWidgetItem* item = createListWidgetItem(nickname);
+    insertItemSorted(item);
+    setItemWidget(item,listItemWidget);
+//    // Creazione del widget personalizzato per l'elemento della lista
+//    QWidget *listItemWidget = new QWidget();
+//    QHBoxLayout *layout = new QHBoxLayout(listItemWidget);
+//
+//    // Creazione dell'icona del messaggio
 //    QIcon messageIcon("img/message-icon.png");
-//    QPixmap pixmap = messageIcon.pixmap(QSize(20, 20));
+//    QLabel *iconLabel = new QLabel();
+//    iconLabel->setPixmap(messageIcon.pixmap(QSize(20, 20)));
 //
-//    // Create a widget to hold the user name and message icon
-//    QWidget* listItemWidget = new QWidget();
-//    QHBoxLayout* layout = new QHBoxLayout(listItemWidget);
+//    // Creazione del testo formattato per il nome utente
+//    QString coloredNickname = QString("<font color='%1'>%2</font>").arg(color, nickname);
+//    QLabel *nicknameLabel = new QLabel(coloredNickname);
 //
-//    // Create a label for the user name
-//    QLabel* nameLabel = new QLabel(nickname);
-//    nameLabel->setStyleSheet(QString("color: %1;").arg(color));
-//
-//    // Create a label for the message icon
-//    QLabel* iconLabel = new QLabel();
-//    iconLabel->setPixmap(pixmap);
-//
-//    // Add the user name label and message icon label to the layout
-//    layout->addWidget(nameLabel);
-//    layout->addSpacing(10); // Add some spacing between the user name and the message icon
+//    // Aggiunta dell'icona e del nome utente al layout
+//    layout->addWidget(nicknameLabel);
+//    layout->addSpacing(5); // Spazio tra l'icona e il nome utente
 //    layout->addWidget(iconLabel);
 //
-//    // Set the layout margins
+//    // Imposta il layout e i margini
 //    layout->setContentsMargins(0, 0, 0, 0);
 //
-//    // Create a new list item
-//    QListWidgetItem* item = new QListWidgetItem(nickname);
-//    item->setSizeHint(QSize(100, 30)); // Set the size of the list item
+//    // Crea un nuovo elemento della lista
+//    QListWidgetItem *item = new QListWidgetItem();
+//    item->setData(Qt::UserRole, nickname); // Salva il nickname come dati dell'elemento
+//    item->setSizeHint(QSize(120, 25)); // Dimensione personalizzabile
 //
-//    // Insert the new item into the list widget
+//    // Inserisce l'elemento nella lista in modo ordinato
 //    int index = 0;
-//    while (index < count() && this->item(index)->text() < nickname  )
-//    {
+//    while (index < count() && this->item(index)->data(Qt::UserRole).toString() < nickname) {
 //        ++index;
 //    }
 //    insertItem(index, item);
 //    setItemWidget(item, listItemWidget);
-//
-//    qDebug() << "Lista utenti dopo l'aggiunta di" << nickname << ":";
-//    for (int i = 0; i < count(); ++i) {
-//        if (this->item(i)) {
-//            qDebug() << "Elemento" << i << ":" << this->item(i)->text();
-//        } else {
-//            qDebug() << "Elemento" << i << ": null";
-//        }
-//    }
 }
 
 void SortedListWidget::removeItem(const QString &nickname)
 {
-    for (int i = 0; i < this->count(); ++i)
+    for(int i = 0; i < count(); ++i)
     {
         QListWidgetItem *item = this->item(i);
 
-        QTextBrowser *textBrowser = qobject_cast<QTextBrowser *>(this->itemWidget(item));
-
-        if (textBrowser && textBrowser->toPlainText() == nickname)
+        if(item)
         {
-            this->takeItem(i);
+            QString currentNickname = item->data(Qt::UserRole).toString();
 
-            delete item;
+            if( currentNickname == nickname)
+            {
+                delete takeItem(i);
+                break;
+            }
+        }
+    }
+}
+
+void SortedListWidget::insertItemSorted(QListWidgetItem *item)
+{
+    int index = 0;
+    QString itemNickname = item->data(Qt::UserRole).toString();
+
+    while(index < count() && this->item(index)->data(Qt::UserRole).toString() < itemNickname )
+    {
+        QString currentNickname = this->item(index)->data(Qt::UserRole).toString();
+
+        if( currentNickname < itemNickname )
+        {
+            ++index;
+        }
+        else
+        {
             break;
         }
     }
-    sortList();
+    insertItem(index,item);
 }
 
-void SortedListWidget::sortList()
+QListWidgetItem* SortedListWidget::createListWidgetItem(const QString &nickname)
 {
-    this->sortItems(Qt::AscendingOrder);
+    QListWidgetItem *item = new QListWidgetItem();
+    item->setData(Qt::UserRole,nickname);
+    item->setSizeHint(QSize(120,25));
+
+    item->setFlags(item->flags() & ~Qt::ItemIsSelectable & ~Qt::ItemIsEnabled);
+
+    return item;
 }
+
+QWidget* SortedListWidget::createListItemWidget(const QString &nickname, const QString &color)
+{
+    QWidget *widget = new QWidget();
+    widget->setFixedSize(120,25);
+    QHBoxLayout *layout = new QHBoxLayout(widget);
+
+    QLabel *nicknameLabel = createNicknameLabel(nickname,color);
+    QLabel *iconLabel = createIconLabel(nickname);
+
+    qDebug() << "Size nicknameLabel " << nicknameLabel->size();
+    qDebug() << "Size iconLabel" << iconLabel->size();
+    qDebug() << "Size widget" << widget->size();
+    qDebug() << "this" << this->size();
+    layout->addWidget(nicknameLabel);
+
+    // Aggiungi uno spaziatore per creare uno spazio tra il nome utente e l'icona
+
+
+    layout->addWidget(iconLabel);
+    layout->setContentsMargins(0,0,0,0);
+    return widget;
+}
+
+QLabel* SortedListWidget::createNicknameLabel(const QString &nickname, const QString &color)
+{
+    QString styledNickname = QString("<font color='%1'>%2</font>").arg(color,nickname);
+    QLabel *label = new QLabel(styledNickname);
+    label->setFixedSize(100,20);
+    return label;
+}
+
+QLabel* SortedListWidget::createIconLabel(const QString& nickname)
+{
+    QIcon messageIcon("img/message-icon.png");
+    QPixmap pixmap = messageIcon.pixmap(QSize(20,20));
+    ClickLabel *label = new ClickLabel();
+    label->setFixedSize(20, 20);
+    label->setPixmap(pixmap);
+
+    connect(label, &ClickLabel::clicked , this , [this,nickname]()
+    {
+        emit messageIconClicked(nickname);
+    });
+
+    return label;
+}
+
