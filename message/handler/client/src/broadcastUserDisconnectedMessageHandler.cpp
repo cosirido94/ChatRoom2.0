@@ -13,17 +13,19 @@ void BroadCastUserDisconnectedMessageHandler::handleMessage(const QString &messa
 
     BroadCastUserDisconnectedMessage broadcastUserDisconnectedMsg = BroadCastUserDisconnectedMessage::deserialize(message);
 
-    qDebug() << "Ricevuto messaggio di broadcast USER_CONNECTED"  << broadcastUserDisconnectedMsg.getUserName() << " " << broadcastUserDisconnectedMsg.getColorUserName();
+    qDebug() << "Ricevuto messaggio di broadcast USER_DISCONNECTED"  << broadcastUserDisconnectedMsg.getUserName() << " " << broadcastUserDisconnectedMsg.getColorUserName();
 
     ChatRoom * chatRoomInstance = clientInstance->getChatRoom();
     if ( chatRoomInstance )
     {
-        MessageWidget *message = new MessageWidget(broadcastUserDisconnectedMsg);
-        chatRoomInstance->appendMessage(message);
+//        MessageWidget *message = new MessageWidget(broadcastUserDisconnectedMsg);
+//        chatRoomInstance->appendMessage(message);
 
         QString nicknameRemoved = broadcastUserDisconnectedMsg.getUserName();
 
-        chatRoomInstance->getUserListWidget()->removeItem(nicknameRemoved);
+//        chatRoomInstance->getUserListWidget()->removeItem(nicknameRemoved);
+        chatRoomInstance->updateUserList(nicknameRemoved,QColor(),false);
         chatRoomInstance->updateNumberClientConnected();
+        chatRoomInstance->updateChatItemStatus(nicknameRemoved,false); // Metti lo status Offline se chatItem aperto
     }
 }

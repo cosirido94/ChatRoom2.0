@@ -1,11 +1,61 @@
-# ninja log v5
-0	55	1711361063709981829	build.ninja	2fa5d055e1277d5e
-1	9	1711360218458241985	server_autogen/mocs_compilation.cpp	79f785ff9704335a
-1	9	1711360218458241985	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/mocs_compilation.cpp	79f785ff9704335a
-9	1378	1711360219826262064	CMakeFiles/server.dir/server/src/main.cpp.o	2d064922032689f8
-20	34	1711360025351404343	CMakeFiles/server.dir/server/src/serverDialog.cpp.o	f325b192e787252a
-20	1410	1711360026727424590	CMakeFiles/server.dir/main.cpp.o	a4018bd93670d70b
-1	9	1711360218458241985	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/server_autogen/timestamp	79f785ff9704335a
-19	34	1711360025351404343	CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o	a79f0ec56c6f66e3
-1	9	1711360218458241985	server_autogen/timestamp	79f785ff9704335a
-1378	1723	1711360220166267054	server	2966dcc777816e51
+# ninja log v6
+11538	13182	1731522736258812355	CMakeFiles/client.dir/custom/src/messageWidget.cpp.o	b19da2ce7c1d52fd
+1926	5734	1731522726646807069	CMakeFiles/client.dir/custom/src/customLineEdit.cpp.o	89e99661e3e1a22c
+10202	12121	1731522734922821065	CMakeFiles/client.dir/message/type/src/broadcastUserDisconnectedMessage.cpp.o	e7b247034be977cf
+5	1923	1731522726634806894	client_autogen/mocs_compilation.cpp	1185fec283967418
+11083	14434	1731522735803815314	CMakeFiles/client.dir/message/handler/client/src/broadcastUserDisconnectedMessageHandler.cpp.o	d0969360bb485010
+9096	11538	1731522733817828320	CMakeFiles/client.dir/message/type/src/broadcastUserConnectedMessage.cpp.o	1158877f19bacb24
+5	1923	1731522726634806894	client_autogen/timestamp	1185fec283967418
+1931	6479	1731522726651807141	CMakeFiles/client.dir/client/src/main.cpp.o	3b48b8cb5f6c0e47
+1933	5582	1731522726653807170	CMakeFiles/client.dir/thread/src/receiverThread.cpp.o	25200aeff044135
+7028	10202	1731522731748842019	CMakeFiles/client.dir/message/handler/client/src/configChatMessageHandler.cpp.o	f0d444e6d3cdac3f
+5583	7914	1731522730303851678	CMakeFiles/client.dir/message/type/src/newUserMessage.cpp.o	aa80931b004ab297
+5	1923	1731522726634806894	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/client_autogen/mocs_compilation.cpp	1185fec283967418
+1929	7028	1731522726649807112	CMakeFiles/client.dir/client/src/clientDialog.cpp.o	7ba570812d702227
+11115	13792	1731522735835815105	CMakeFiles/client.dir/custom/src/clickLabel.cpp.o	971b5dff191b626a
+11762	14723	1731522736482810901	CMakeFiles/client.dir/message/handler/client/src/chatroomTextMessageReceivedHandler.cpp.o	2e76525b2a704e28
+13182	14953	1731522737902801719	CMakeFiles/client.dir/custom/src/chatItem.cpp.o	f924f555bdcc76d3
+5	1923	1731522726634806894	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/client_autogen/timestamp	1185fec283967418
+5734	7309	1731522730454850666	CMakeFiles/client.dir/message/parser/src/messageParser.cpp.o	2d0e1f5e3db4f1b5
+1930	7216	1731522726650807127	CMakeFiles/client.dir/client/src/client.cpp.o	f9cbd1aed4869bef
+11362	13733	1731522736082813497	CMakeFiles/client.dir/message/type/src/chatroomTextMessage.cpp.o	82e4979fb1c972cd
+1925	6559	1731522726645807054	CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o	5ce9f77390f31cf0
+7217	11115	1731522731937840759	CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o	cd29e2d1adeeaf10
+9186	11762	1731522733906827733	CMakeFiles/client.dir/message/handler/client/src/broadcastUserConnectedMessageHandler.cpp.o	52aa738ff0e42fae
+6559	9033	1731522731279845146	CMakeFiles/client.dir/message/handler/client/src/errorNickMessageHandler.cpp.o	a49a1d0e65821f46
+7310	9096	1731522732030840140	CMakeFiles/client.dir/server/src/user.cpp.o	e07fd0c8a477b219
+6479	9185	1731522731199845680	CMakeFiles/client.dir/message/type/src/configChatMessage.cpp.o	acd5e481328f1b77
+9033	11362	1731522733753828742	CMakeFiles/client.dir/message/type/src/chatRoomReadyMessage.cpp.o	efdbb764c3bb4efa
+12121	13673	1731522736841808572	CMakeFiles/client.dir/custom/src/userWidget.cpp.o	940a3b3f57c56ec4
+14953	15607	1731522739673790373	client	13df98f08ce0c804
+7914	11083	1731522732635836129	CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o	50854afcb6a00313
+12	1875	1731668654477072771	client_autogen/timestamp	1185fec283967418
+12	1875	1731668654477072771	client_autogen/mocs_compilation.cpp	1185fec283967418
+12	1875	1731668654477072771	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/client_autogen/timestamp	1185fec283967418
+12	1875	1731668654477072771	/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/client_autogen/mocs_compilation.cpp	1185fec283967418
+1883	4712	1731668654495072665	CMakeFiles/client.dir/thread/src/receiverThread.cpp.o	25200aeff044135
+1876	5303	1731668654488072706	CMakeFiles/client.dir/custom/src/customLineEdit.cpp.o	89e99661e3e1a22c
+1876	5985	1731668654488072706	CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o	5ce9f77390f31cf0
+1883	6044	1731668654495072665	CMakeFiles/client.dir/client/src/main.cpp.o	3b48b8cb5f6c0e47
+1881	6050	1731668654493072677	CMakeFiles/client.dir/client/src/client.cpp.o	f9cbd1aed4869bef
+1878	6367	1731668654490072695	CMakeFiles/client.dir/client/src/clientDialog.cpp.o	7ba570812d702227
+4712	6725	1731668657324056130	CMakeFiles/client.dir/message/type/src/newUserMessage.cpp.o	aa80931b004ab297
+5303	6768	1731668657915052682	CMakeFiles/client.dir/message/parser/src/messageParser.cpp.o	2d0e1f5e3db4f1b5
+5985	7734	1731668658597048709	CMakeFiles/client.dir/message/type/src/configChatMessage.cpp.o	acd5e481328f1b77
+6045	7972	1731668658657048359	CMakeFiles/client.dir/message/handler/client/src/errorNickMessageHandler.cpp.o	a49a1d0e65821f46
+6725	8356	1731668659337044400	CMakeFiles/client.dir/server/src/user.cpp.o	e07fd0c8a477b219
+6367	9102	1731668658979046483	CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o	cd29e2d1adeeaf10
+6768	9465	1731668659380044150	CMakeFiles/client.dir/custom/src/sortedListWidget.cpp.o	50854afcb6a00313
+6050	9771	1731668658662048330	CMakeFiles/client.dir/message/handler/client/src/configChatMessageHandler.cpp.o	f0d444e6d3cdac3f
+7734	10010	1731668660346038532	CMakeFiles/client.dir/message/type/src/chatRoomReadyMessage.cpp.o	efdbb764c3bb4efa
+7972	10355	1731668660584037149	CMakeFiles/client.dir/message/type/src/broadcastUserConnectedMessage.cpp.o	1158877f19bacb24
+8356	11349	1731668660968034917	CMakeFiles/client.dir/message/handler/client/src/broadcastUserConnectedMessageHandler.cpp.o	52aa738ff0e42fae
+9102	11383	1731668661714030587	CMakeFiles/client.dir/message/type/src/broadcastUserDisconnectedMessage.cpp.o	e7b247034be977cf
+10355	12030	1731668662968023316	CMakeFiles/client.dir/custom/src/messageWidget.cpp.o	b19da2ce7c1d52fd
+10010	12145	1731668662622025322	CMakeFiles/client.dir/message/type/src/chatroomTextMessage.cpp.o	82e4979fb1c972cd
+9771	12372	1731668662383026707	CMakeFiles/client.dir/custom/src/clickLabel.cpp.o	971b5dff191b626a
+9465	12824	1731668662077028481	CMakeFiles/client.dir/message/handler/client/src/broadcastUserDisconnectedMessageHandler.cpp.o	d0969360bb485010
+11383	13273	1731668663995017371	CMakeFiles/client.dir/custom/src/userWidget.cpp.o	940a3b3f57c56ec4
+12030	13976	1731668664642013630	CMakeFiles/client.dir/custom/src/chatItem.cpp.o	f924f555bdcc76d3
+11349	14057	1731668663961017568	CMakeFiles/client.dir/message/handler/client/src/chatroomTextMessageReceivedHandler.cpp.o	2e76525b2a704e28
+14057	14656	1731668666669001927	client	13df98f08ce0c804

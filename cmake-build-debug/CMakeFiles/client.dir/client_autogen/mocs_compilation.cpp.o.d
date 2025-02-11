@@ -333,6 +333,12 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
@@ -341,7 +347,6 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
@@ -355,6 +360,10 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_client.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
@@ -388,6 +397,8 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_chatItem.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/chatItem.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_clickLabel.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/clickLabel.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_customLineEdit.cpp \
@@ -396,6 +407,8 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/messageWidget.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_sortedListWidget.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/sortedListWidget.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_userWidget.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/userWidget.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_broadcastUserConnectedMessageHandler.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/broadcastUserConnectedMessageHandler.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/../../../message/handler/client/include/clientMessageHandler.h \

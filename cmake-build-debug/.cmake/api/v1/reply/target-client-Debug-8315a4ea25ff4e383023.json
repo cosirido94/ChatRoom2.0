@@ -32,7 +32,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 115,
+				"line" : 119,
 				"parent" : 0
 			},
 			{
@@ -150,18 +150,20 @@
 				39,
 				41,
 				43,
-				45
+				45,
+				47,
+				49
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "client_autogen::@6890427a1f51a3e7e1df"
+			"id" : "client_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "client_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "client_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "client::@6890427a1f51a3e7e1df",
@@ -235,7 +237,9 @@
 				39,
 				41,
 				43,
-				45
+				45,
+				47,
+				49
 			]
 		},
 		{
@@ -264,21 +268,23 @@
 				38,
 				40,
 				42,
-				44
+				44,
+				46,
+				48
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				46
+				50
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				47
+				51
 			]
 		}
 	],
@@ -536,6 +542,28 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "message/handler/client/src/chatroomTextMessageReceivedHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "custom/include/userWidget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "custom/src/userWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "custom/include/chatItem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "custom/src/chatItem.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

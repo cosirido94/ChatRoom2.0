@@ -1,6 +1,7 @@
 /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_broadcastUserConnectedMessageHandler.cpp: /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/include/broadcastUserConnectedMessageHandler.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/moc_predefs.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatroom.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/chatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/clickLabel.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/messageWidget.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/sortedListWidget.h \
@@ -345,6 +346,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
@@ -360,13 +362,17 @@
   /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollArea \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollBar \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
@@ -388,10 +394,12 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollbar.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \

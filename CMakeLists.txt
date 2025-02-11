@@ -110,6 +110,10 @@ add_executable(client
         custom/src/messageWidget.cpp
         message/handler/client/include/chatroomTextMessageReceivedHandler.h
         message/handler/client/src/chatroomTextMessageReceivedHandler.cpp
+        custom/include/userWidget.h
+        custom/src/userWidget.cpp
+        custom/include/chatItem.h
+        custom/src/chatItem.cpp
 )
 
 target_link_libraries(client

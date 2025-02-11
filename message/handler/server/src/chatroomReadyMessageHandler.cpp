@@ -30,9 +30,11 @@ void ChatRoomReadyMessageHandler::sendBroadcastUserConnectedMessage( const QStri
         qDebug() << "Impossibile ottenere un'istanza del Server";
         return;
     }
-    for( QTcpSocket* receiver : serverInstance->getUsersMap().keys() )
-    {
-        serverInstance->sendToClient(receiver,message);
-        qDebug() << "Invio broadcast a " << serverInstance->getUsersMap().value(receiver).getNickName();
-    }
+//    for( QTcpSocket* receiver : serverInstance->getUsersMap().keys() )
+//    {
+////        serverInstance->sendToClient(receiver,message);
+//        qDebug() << "Invio broadcast a " << serverInstance->getUsersMap().value(receiver).getNickName();
+//        serverInstance->sendBroadCastMessage(message);
+//    }
+    serverInstance->sendBroadCastMessage(message);
 }

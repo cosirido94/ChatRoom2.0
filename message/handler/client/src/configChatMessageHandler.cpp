@@ -14,7 +14,7 @@ void ConfigChatMessageHandler::handleMessage(const QString &message)
     ConfigChatMessage configChatMsg = ConfigChatMessage::deserialize(message);
     QString nickname = clientInstance->getNickName();
     QColor userColor = configChatMsg.getColor();
-    qDebug() << "Utenti connessi: ";
+    qDebug() << "ConfigChatMessageHandler ::: Utenti connessi: ";
     QList<User> usersList = configChatMsg.getUserList();
 
     for(const User& user : usersList)

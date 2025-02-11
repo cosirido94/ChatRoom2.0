@@ -331,6 +331,12 @@ CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
@@ -339,7 +345,6 @@ CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
@@ -353,6 +358,11 @@ CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/userWidget.h

@@ -353,13 +353,18 @@ CMakeFiles/client.dir/client/src/client.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/sortedListWidget.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/clickLabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
@@ -373,6 +378,10 @@ CMakeFiles/client.dir/client/src/client.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/client/src/../../message/handler/client/include/clientMessageHandler.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/client/src/../../message/type/include/newUserMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/client/src/../../message/type/include/message.h \

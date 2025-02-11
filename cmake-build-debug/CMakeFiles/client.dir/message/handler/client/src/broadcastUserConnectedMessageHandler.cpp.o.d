@@ -339,13 +339,18 @@ CMakeFiles/client.dir/message/handler/client/src/broadcastUserConnectedMessageHa
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/sortedListWidget.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/clickLabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
@@ -357,6 +362,10 @@ CMakeFiles/client.dir/message/handler/client/src/broadcastUserConnectedMessageHa
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/message.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../client/include/client.h \

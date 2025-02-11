@@ -178,6 +178,11 @@ void Client::closeClientDialog()
 {
     emit shutClientDialog();
     openChatRoom();
+    chatRoom->chatroomReadyNotify();
+    /* Con questo mando un segnale per dire agli altri
+     * client connessi che mi sono collegato , aggiornando
+     * le loro liste etc ...*/
+
 }
 
 void Client::openChatRoom()
@@ -185,7 +190,6 @@ void Client::openChatRoom()
     connect(chatRoom , &ChatRoom::chatRoomReady , this , &Client::sendChatRoomReady);
     connect(chatRoom , &ChatRoom::messageSent , this , &Client::sendChatRoomMessage);
 
-    chatRoom->configureChatRoom();
     chatRoom->show();
 }
 
@@ -202,3 +206,4 @@ void Client::sendChatRoomMessage(const QColor userColor,const QString message)
     sendToServer(socket,chatroomTextMsg);
     qDebug() << "Messaggio di testo inviato ";
 }
+

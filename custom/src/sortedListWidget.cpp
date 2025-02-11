@@ -9,7 +9,15 @@ SortedListWidget::SortedListWidget(QWidget *parent) : QListWidget(parent)
 //    this->setSortingEnabled(true);
 //    sortList();
     setSelectionMode(QAbstractItemView::NoSelection);
-
+    // Stile CSS per migliorare l'aspetto della lista
+    setStyleSheet("QListWidget {"
+                  "background-color: #f9f9f9;"
+                  "border: none;"
+                  "padding: 5px;"
+                  "}"
+                  "QListWidget::item {"
+                  "border: none;"
+                  "}");
 }
 
 void SortedListWidget::addItem(const QString &nickname, const QString &color)
@@ -98,7 +106,7 @@ QListWidgetItem* SortedListWidget::createListWidgetItem(const QString &nickname)
 {
     QListWidgetItem *item = new QListWidgetItem();
     item->setData(Qt::UserRole,nickname);
-    item->setSizeHint(QSize(120,25));
+    item->setSizeHint(QSize(120,35));
 
     item->setFlags(item->flags() & ~Qt::ItemIsSelectable & ~Qt::ItemIsEnabled);
 
@@ -108,31 +116,40 @@ QListWidgetItem* SortedListWidget::createListWidgetItem(const QString &nickname)
 QWidget* SortedListWidget::createListItemWidget(const QString &nickname, const QString &color)
 {
     QWidget *widget = new QWidget();
-    widget->setFixedSize(120,25);
+    widget->setStyleSheet("border: none;");
+//    widget->setFixedSize(120,25);
     QHBoxLayout *layout = new QHBoxLayout(widget);
+    layout->setContentsMargins(10, 5, 10, 5);
+    layout->setSpacing(8); // Spaziatura tra nickname e icona
 
     QLabel *nicknameLabel = createNicknameLabel(nickname,color);
+//    layout->addStretch();
     QLabel *iconLabel = createIconLabel(nickname);
 
-    qDebug() << "Size nicknameLabel " << nicknameLabel->size();
-    qDebug() << "Size iconLabel" << iconLabel->size();
-    qDebug() << "Size widget" << widget->size();
-    qDebug() << "this" << this->size();
+//    qDebug() << "Size nicknameLabel " << nicknameLabel->size();
+//    qDebug() << "Size iconLabel" << iconLabel->size();
+//    qDebug() << "Size widget" << widget->size();
+//    qDebug() << "this" << this->size();
     layout->addWidget(nicknameLabel);
 
     // Aggiungi uno spaziatore per creare uno spazio tra il nome utente e l'icona
 
-
+    layout->addStretch();
     layout->addWidget(iconLabel);
-    layout->setContentsMargins(0,0,0,0);
+//    layout->setContentsMargins(0,0,0,0);
+    widget->setFixedHeight(30);
     return widget;
 }
 
 QLabel* SortedListWidget::createNicknameLabel(const QString &nickname, const QString &color)
 {
-    QString styledNickname = QString("<font color='%1'>%2</font>").arg(color,nickname);
+    QString styledNickname = QString("<font color='%1'style='font-size:18px;'>%2</font>").arg(color,nickname);
     QLabel *label = new QLabel(styledNickname);
-    label->setFixedSize(100,20);
+//    label->setFixedSize(100,20);
+    // Imposta QSizePolicy per rendere flessibile il ridimensionamento
+    label->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+    label->setFixedHeight(20);  // Altezza fissa per il nickname label
+    label->setContentsMargins(0, 0, 0, 0);
     return label;
 }
 
@@ -152,3 +169,15 @@ QLabel* SortedListWidget::createIconLabel(const QString& nickname)
     return label;
 }
 
+QString SortedListWidget::getNickname(int index) const
+{
+    if (index < 0 || index >=count() )
+    {
+        return QString();
+    }
+    else
+    {
+        QListWidgetItem* item = this->item(index);
+        return item->data(Qt::UserRole).toString();
+    }
+}

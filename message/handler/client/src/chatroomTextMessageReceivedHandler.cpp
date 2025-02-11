@@ -17,7 +17,8 @@ void ChatRoomTextMessageReceivedHandler::handleMessage(const QString &message)
     ChatRoom *chatRoomInstance = clientInstance->getChatRoom();
     if(chatRoomInstance)
     {
-        MessageWidget *message = new MessageWidget( chatroomTextMsg);
-        chatRoomInstance->appendMessage(message);
+//        MessageWidget *message = new MessageWidget( chatroomTextMsg);
+//        chatRoomInstance->appendMessage(message);
+        chatRoomInstance->appendNewMessage(chatroomTextMsg);
     }
 }

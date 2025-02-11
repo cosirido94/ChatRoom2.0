@@ -125,14 +125,16 @@ MessageWidget::MessageWidget(const ChatRoomTextMessage &message, QWidget *parent
     ).arg(colorSender.name(), sender );
     senderLabel->setText(styledSender);
 
-    QString styleSheet = QString(
-            "QWidget#messageWidget {"
-            "   background-color: white;"
-            "   border-radius: 10px;"
-            "}"
-    );
-    setStyleSheet(styleSheet);
-    setObjectName("messageWidget");
+//    QString styleSheet = QString(
+//            "QWidget#messageWidget {"
+//            "   background-color: white;"
+//            "   border-radius: 10px;"
+//            "}"
+//    );
+//    setStyleSheet(styleSheet);
+//    setObjectName("messageWidget");
+    this->setStyleSheet("background-color: white; border-radius:10px;");
+
 }
 void MessageWidget::setupUi()
 {

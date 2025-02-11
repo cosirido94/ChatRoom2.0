@@ -18,8 +18,8 @@ void BroadcastUserConnectedMessageHandler::handleMessage(const QString& message)
     ChatRoom * chatRoomInstance = clientInstance->getChatRoom();
     if ( chatRoomInstance )
     {
-        MessageWidget *message = new MessageWidget(broadcastUserConnectedMsg);
-        chatRoomInstance->appendMessage(message);
+//        MessageWidget *message = new MessageWidget(broadcastUserConnectedMsg);
+//        chatRoomInstance->appendMessage(message);
 
         QString nicknameAdded = broadcastUserConnectedMsg.getUserName();
         QColor colorNicknameAdded = broadcastUserConnectedMsg.getColorUserName();
@@ -28,7 +28,10 @@ void BroadcastUserConnectedMessageHandler::handleMessage(const QString& message)
 
         if (clientInstance->getNickName() != nicknameAdded )
         {
-            chatRoomInstance->getUserListWidget()->addItem(nicknameAdded,colorNicknameAdded.name());
+            /* Qui ci vuole un metodo in chatroom per aggiornare la lista come sotto!
+             * */
+//            chatRoomInstance->getUserListWidget()->addItem(nicknameAdded,colorNicknameAdded.name());
+            chatRoomInstance->updateUserList(nicknameAdded,colorNicknameAdded,true);
         }
         chatRoomInstance->updateNumberClientConnected();
     }
