@@ -362,10 +362,13 @@ CMakeFiles/client.dir/message/handler/client/src/broadcastUserConnectedMessageHa
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/message.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/src/../include/../../../../chatroom/include/../include/privateChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/src/../include/../../../../chatroom/include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/src/../include/../../../../chatroom/include/../include/publicChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/src/../include/../../../../chatroom/include/../include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../client/include/client.h \

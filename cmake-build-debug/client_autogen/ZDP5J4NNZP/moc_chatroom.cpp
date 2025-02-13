@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ChatRoom_t {
     QByteArrayData data[17];
-    char stringdata0[199];
+    char stringdata0[206];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -47,8 +47,8 @@ QT_MOC_LITERAL(11, 140, 11), // "filterUsers"
 QT_MOC_LITERAL(12, 152, 4), // "text"
 QT_MOC_LITERAL(13, 157, 11), // "addChatItem"
 QT_MOC_LITERAL(14, 169, 14), // "removeChatItem"
-QT_MOC_LITERAL(15, 184, 9), // "ChatItem*"
-QT_MOC_LITERAL(16, 194, 4) // "item"
+QT_MOC_LITERAL(15, 184, 16), // "PrivateChatItem*"
+QT_MOC_LITERAL(16, 201, 4) // "item"
 
     },
     "ChatRoom\0chatRoomReady\0\0userColor\0"
@@ -56,7 +56,7 @@ QT_MOC_LITERAL(16, 194, 4) // "item"
     "addChatItemRequested\0nickname\0"
     "onClickSendMessage\0handleMessageIconClicked\0"
     "filterUsers\0text\0addChatItem\0"
-    "removeChatItem\0ChatItem*\0item"
+    "removeChatItem\0PrivateChatItem*\0item"
 };
 #undef QT_MOC_LITERAL
 
@@ -113,7 +113,7 @@ void ChatRoom::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 4: _t->handleMessageIconClicked((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 5: _t->filterUsers((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 6: _t->addChatItem((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 7: _t->removeChatItem((*reinterpret_cast< ChatItem*(*)>(_a[1]))); break;
+        case 7: _t->removeChatItem((*reinterpret_cast< PrivateChatItem*(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -123,7 +123,7 @@ void ChatRoom::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< ChatItem* >(); break;
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< PrivateChatItem* >(); break;
             }
             break;
         }

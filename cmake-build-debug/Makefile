@@ -194,6 +194,30 @@ client_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_autogen.dir/build.make CMakeFiles/client_autogen.dir/build
 .PHONY : client_autogen/fast
 
+chatroom/src/chatItem.o: chatroom/src/chatItem.cpp.o
+.PHONY : chatroom/src/chatItem.o
+
+# target to build an object file
+chatroom/src/chatItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o
+.PHONY : chatroom/src/chatItem.cpp.o
+
+chatroom/src/chatItem.i: chatroom/src/chatItem.cpp.i
+.PHONY : chatroom/src/chatItem.i
+
+# target to preprocess a source file
+chatroom/src/chatItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/chatItem.cpp.i
+.PHONY : chatroom/src/chatItem.cpp.i
+
+chatroom/src/chatItem.s: chatroom/src/chatItem.cpp.s
+.PHONY : chatroom/src/chatItem.s
+
+# target to generate assembly for a file
+chatroom/src/chatItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/chatItem.cpp.s
+.PHONY : chatroom/src/chatItem.cpp.s
+
 chatroom/src/chatroom.o: chatroom/src/chatroom.cpp.o
 .PHONY : chatroom/src/chatroom.o
 
@@ -217,6 +241,54 @@ chatroom/src/chatroom.s: chatroom/src/chatroom.cpp.s
 chatroom/src/chatroom.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/chatroom.cpp.s
 .PHONY : chatroom/src/chatroom.cpp.s
+
+chatroom/src/privateChatItem.o: chatroom/src/privateChatItem.cpp.o
+.PHONY : chatroom/src/privateChatItem.o
+
+# target to build an object file
+chatroom/src/privateChatItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o
+.PHONY : chatroom/src/privateChatItem.cpp.o
+
+chatroom/src/privateChatItem.i: chatroom/src/privateChatItem.cpp.i
+.PHONY : chatroom/src/privateChatItem.i
+
+# target to preprocess a source file
+chatroom/src/privateChatItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.i
+.PHONY : chatroom/src/privateChatItem.cpp.i
+
+chatroom/src/privateChatItem.s: chatroom/src/privateChatItem.cpp.s
+.PHONY : chatroom/src/privateChatItem.s
+
+# target to generate assembly for a file
+chatroom/src/privateChatItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.s
+.PHONY : chatroom/src/privateChatItem.cpp.s
+
+chatroom/src/publicChatItem.o: chatroom/src/publicChatItem.cpp.o
+.PHONY : chatroom/src/publicChatItem.o
+
+# target to build an object file
+chatroom/src/publicChatItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o
+.PHONY : chatroom/src/publicChatItem.cpp.o
+
+chatroom/src/publicChatItem.i: chatroom/src/publicChatItem.cpp.i
+.PHONY : chatroom/src/publicChatItem.i
+
+# target to preprocess a source file
+chatroom/src/publicChatItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.i
+.PHONY : chatroom/src/publicChatItem.cpp.i
+
+chatroom/src/publicChatItem.s: chatroom/src/publicChatItem.cpp.s
+.PHONY : chatroom/src/publicChatItem.s
+
+# target to generate assembly for a file
+chatroom/src/publicChatItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.s
+.PHONY : chatroom/src/publicChatItem.cpp.s
 
 client/src/client.o: client/src/client.cpp.o
 .PHONY : client/src/client.o
@@ -313,30 +385,6 @@ client_autogen/mocs_compilation.s: client_autogen/mocs_compilation.cpp.s
 client_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.s
 .PHONY : client_autogen/mocs_compilation.cpp.s
-
-custom/src/chatItem.o: custom/src/chatItem.cpp.o
-.PHONY : custom/src/chatItem.o
-
-# target to build an object file
-custom/src/chatItem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/chatItem.cpp.o
-.PHONY : custom/src/chatItem.cpp.o
-
-custom/src/chatItem.i: custom/src/chatItem.cpp.i
-.PHONY : custom/src/chatItem.i
-
-# target to preprocess a source file
-custom/src/chatItem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/chatItem.cpp.i
-.PHONY : custom/src/chatItem.cpp.i
-
-custom/src/chatItem.s: custom/src/chatItem.cpp.s
-.PHONY : custom/src/chatItem.s
-
-# target to generate assembly for a file
-custom/src/chatItem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/custom/src/chatItem.cpp.s
-.PHONY : custom/src/chatItem.cpp.s
 
 custom/src/clickLabel.o: custom/src/clickLabel.cpp.o
 .PHONY : custom/src/clickLabel.o
@@ -734,6 +782,30 @@ message/type/src/broadcastUserDisconnectedMessage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/message/type/src/broadcastUserDisconnectedMessage.cpp.s
 .PHONY : message/type/src/broadcastUserDisconnectedMessage.cpp.s
 
+message/type/src/chatMessage.o: message/type/src/chatMessage.cpp.o
+.PHONY : message/type/src/chatMessage.o
+
+# target to build an object file
+message/type/src/chatMessage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/type/src/chatMessage.cpp.o
+.PHONY : message/type/src/chatMessage.cpp.o
+
+message/type/src/chatMessage.i: message/type/src/chatMessage.cpp.i
+.PHONY : message/type/src/chatMessage.i
+
+# target to preprocess a source file
+message/type/src/chatMessage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/type/src/chatMessage.cpp.i
+.PHONY : message/type/src/chatMessage.cpp.i
+
+message/type/src/chatMessage.s: message/type/src/chatMessage.cpp.s
+.PHONY : message/type/src/chatMessage.s
+
+# target to generate assembly for a file
+message/type/src/chatMessage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/message/type/src/chatMessage.cpp.s
+.PHONY : message/type/src/chatMessage.cpp.s
+
 message/type/src/chatRoomReadyMessage.o: message/type/src/chatRoomReadyMessage.cpp.o
 .PHONY : message/type/src/chatRoomReadyMessage.o
 
@@ -1027,9 +1099,18 @@ help:
 	@echo "... server_autogen_timestamp_deps"
 	@echo "... client"
 	@echo "... server"
+	@echo "... chatroom/src/chatItem.o"
+	@echo "... chatroom/src/chatItem.i"
+	@echo "... chatroom/src/chatItem.s"
 	@echo "... chatroom/src/chatroom.o"
 	@echo "... chatroom/src/chatroom.i"
 	@echo "... chatroom/src/chatroom.s"
+	@echo "... chatroom/src/privateChatItem.o"
+	@echo "... chatroom/src/privateChatItem.i"
+	@echo "... chatroom/src/privateChatItem.s"
+	@echo "... chatroom/src/publicChatItem.o"
+	@echo "... chatroom/src/publicChatItem.i"
+	@echo "... chatroom/src/publicChatItem.s"
 	@echo "... client/src/client.o"
 	@echo "... client/src/client.i"
 	@echo "... client/src/client.s"
@@ -1042,9 +1123,6 @@ help:
 	@echo "... client_autogen/mocs_compilation.o"
 	@echo "... client_autogen/mocs_compilation.i"
 	@echo "... client_autogen/mocs_compilation.s"
-	@echo "... custom/src/chatItem.o"
-	@echo "... custom/src/chatItem.i"
-	@echo "... custom/src/chatItem.s"
 	@echo "... custom/src/clickLabel.o"
 	@echo "... custom/src/clickLabel.i"
 	@echo "... custom/src/clickLabel.s"
@@ -1093,6 +1171,9 @@ help:
 	@echo "... message/type/src/broadcastUserDisconnectedMessage.o"
 	@echo "... message/type/src/broadcastUserDisconnectedMessage.i"
 	@echo "... message/type/src/broadcastUserDisconnectedMessage.s"
+	@echo "... message/type/src/chatMessage.o"
+	@echo "... message/type/src/chatMessage.i"
+	@echo "... message/type/src/chatMessage.s"
 	@echo "... message/type/src/chatRoomReadyMessage.o"
 	@echo "... message/type/src/chatRoomReadyMessage.i"
 	@echo "... message/type/src/chatRoomReadyMessage.s"

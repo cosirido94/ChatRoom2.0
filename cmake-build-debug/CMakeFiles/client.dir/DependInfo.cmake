@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/chatItem.cpp" "CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o" "gcc" "CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/chatroom.cpp" "CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o" "gcc" "CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o.d"
+  "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/privateChatItem.cpp" "CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o" "gcc" "CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o.d"
+  "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/publicChatItem.cpp" "CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o" "gcc" "CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/client/src/client.cpp" "CMakeFiles/client.dir/client/src/client.cpp.o" "gcc" "CMakeFiles/client.dir/client/src/client.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/client/src/clientDialog.cpp" "CMakeFiles/client.dir/client/src/clientDialog.cpp.o" "gcc" "CMakeFiles/client.dir/client/src/clientDialog.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/client/src/main.cpp" "CMakeFiles/client.dir/client/src/main.cpp.o" "gcc" "CMakeFiles/client.dir/client/src/main.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/client_autogen/mocs_compilation.cpp" "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o.d"
-  "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/chatItem.cpp" "CMakeFiles/client.dir/custom/src/chatItem.cpp.o" "gcc" "CMakeFiles/client.dir/custom/src/chatItem.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/clickLabel.cpp" "CMakeFiles/client.dir/custom/src/clickLabel.cpp.o" "gcc" "CMakeFiles/client.dir/custom/src/clickLabel.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/customLineEdit.cpp" "CMakeFiles/client.dir/custom/src/customLineEdit.cpp.o" "gcc" "CMakeFiles/client.dir/custom/src/customLineEdit.cpp.o.d"
   "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/messageWidget.cpp" "CMakeFiles/client.dir/custom/src/messageWidget.cpp.o" "gcc" "CMakeFiles/client.dir/custom/src/messageWidget.cpp.o.d"

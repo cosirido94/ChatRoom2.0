@@ -405,19 +405,47 @@ CMakeFiles/client.dir/custom/src/userWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/custom/src/userWidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/userWidget.cpp" -o CMakeFiles/client.dir/custom/src/userWidget.cpp.s
 
-CMakeFiles/client.dir/custom/src/chatItem.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/custom/src/chatItem.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/src/chatItem.cpp
-CMakeFiles/client.dir/custom/src/chatItem.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/client.dir/custom/src/chatItem.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/custom/src/chatItem.cpp.o -MF CMakeFiles/client.dir/custom/src/chatItem.cpp.o.d -o CMakeFiles/client.dir/custom/src/chatItem.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/chatItem.cpp"
+CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/chatItem.cpp
+CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o -MF CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o.d -o CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/chatItem.cpp"
 
-CMakeFiles/client.dir/custom/src/chatItem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/custom/src/chatItem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/chatItem.cpp" > CMakeFiles/client.dir/custom/src/chatItem.cpp.i
+CMakeFiles/client.dir/chatroom/src/chatItem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/chatroom/src/chatItem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/chatItem.cpp" > CMakeFiles/client.dir/chatroom/src/chatItem.cpp.i
 
-CMakeFiles/client.dir/custom/src/chatItem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/custom/src/chatItem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/custom/src/chatItem.cpp" -o CMakeFiles/client.dir/custom/src/chatItem.cpp.s
+CMakeFiles/client.dir/chatroom/src/chatItem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/chatroom/src/chatItem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/chatItem.cpp" -o CMakeFiles/client.dir/chatroom/src/chatItem.cpp.s
+
+CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/publicChatItem.cpp
+CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o -MF CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o.d -o CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/publicChatItem.cpp"
+
+CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/publicChatItem.cpp" > CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.i
+
+CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/publicChatItem.cpp" -o CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.s
+
+CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o: /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/privateChatItem.cpp
+CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o -MF CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o.d -o CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o -c "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/privateChatItem.cpp"
+
+CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/privateChatItem.cpp" > CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.i
+
+CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ilcondor/Documents/Project C++/ChatRoom/chatroom/src/privateChatItem.cpp" -o CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.s
 
 # Object files for target client
 client_OBJECTS = \
@@ -445,7 +473,9 @@ client_OBJECTS = \
 "CMakeFiles/client.dir/custom/src/messageWidget.cpp.o" \
 "CMakeFiles/client.dir/message/handler/client/src/chatroomTextMessageReceivedHandler.cpp.o" \
 "CMakeFiles/client.dir/custom/src/userWidget.cpp.o" \
-"CMakeFiles/client.dir/custom/src/chatItem.cpp.o"
+"CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o" \
+"CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o" \
+"CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
@@ -474,14 +504,16 @@ client: CMakeFiles/client.dir/message/type/src/chatroomTextMessage.cpp.o
 client: CMakeFiles/client.dir/custom/src/messageWidget.cpp.o
 client: CMakeFiles/client.dir/message/handler/client/src/chatroomTextMessageReceivedHandler.cpp.o
 client: CMakeFiles/client.dir/custom/src/userWidget.cpp.o
-client: CMakeFiles/client.dir/custom/src/chatItem.cpp.o
+client: CMakeFiles/client.dir/chatroom/src/chatItem.cpp.o
+client: CMakeFiles/client.dir/chatroom/src/publicChatItem.cpp.o
+client: CMakeFiles/client.dir/chatroom/src/privateChatItem.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
 client: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.3
 client: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 client: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ilcondor/Documents/Project C++/ChatRoom/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

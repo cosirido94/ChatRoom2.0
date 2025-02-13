@@ -358,11 +358,16 @@ CMakeFiles/client.dir/chatroom/src/chatroom.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/../include/privateChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/../include/publicChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/../include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/userWidget.h
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/userWidget.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/publicChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/src/../include/privateChatItem.h

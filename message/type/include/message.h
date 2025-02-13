@@ -6,8 +6,8 @@
 class Message
 {
 public:
-    virtual QString serialize() const = 0;
     virtual ~Message(){}
+    virtual QString serialize() const = 0;
 
 };
 #endif //CHATROOM_MESSAGE_H

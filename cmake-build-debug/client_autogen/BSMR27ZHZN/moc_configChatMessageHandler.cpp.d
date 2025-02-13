@@ -1,7 +1,9 @@
 /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/BSMR27ZHZN/moc_configChatMessageHandler.cpp: /home/ilcondor/Documents/Project\ C++/ChatRoom/message/handler/client/include/configChatMessageHandler.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/moc_predefs.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatroom.h \
-  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/chatItem.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/privateChatItem.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/publicChatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/clickLabel.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/messageWidget.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/sortedListWidget.h \

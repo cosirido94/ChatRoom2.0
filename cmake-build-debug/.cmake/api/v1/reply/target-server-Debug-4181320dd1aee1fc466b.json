@@ -32,7 +32,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 57,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -144,7 +144,8 @@
 				27,
 				29,
 				31,
-				33
+				33,
+				34
 			]
 		}
 	],
@@ -223,7 +224,8 @@
 				27,
 				29,
 				31,
-				33
+				33,
+				34
 			]
 		},
 		{
@@ -253,14 +255,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				34
+				35
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				35
+				36
 			]
 		}
 	],
@@ -452,6 +454,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "message/handler/server/src/chatroomTextMessageHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "message/type/src/chatMessage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

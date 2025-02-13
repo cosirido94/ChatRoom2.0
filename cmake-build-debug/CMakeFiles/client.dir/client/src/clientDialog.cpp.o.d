@@ -387,10 +387,13 @@ CMakeFiles/client.dir/client/src/clientDialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../chatroom/include/../include/privateChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../chatroom/include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../chatroom/include/../include/publicChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../chatroom/include/../include/../include/chatItem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout \

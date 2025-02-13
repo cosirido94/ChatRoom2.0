@@ -1,11 +1,12 @@
 #ifndef CHATROOM_BROADCASTUSERCONNECTEDMESSAGE_H
 #define CHATROOM_BROADCASTUSERCONNECTEDMESSAGE_H
 
-#include "message.h"
+//#include "message.h"
+#include "chatMessage.h"
 #include <QDateTime>
 #include <QColor>
 
-class BroadcastUserConnectedMessage : public Message
+class BroadcastUserConnectedMessage : public ChatMessage
 {
 
 private:

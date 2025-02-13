@@ -41,8 +41,10 @@ void ChatRoom::createLayout()
     leftLayout->addWidget(messageLabel);
 
     // 3. Etichetta "#public" sotto "Messaggi" (fissa)
-    ChatItem *publicChatLabel = new ChatItem(this);
-//    publicChatLabel->setStyleSheet("border: 2px solid black; padding:5px;");
+//    ChatItem *publicChatLabel = new ChatItem(this);
+//    leftLayout->addWidget(publicChatLabel);
+
+    PublicChatItem *publicChatLabel = new PublicChatItem(this);
     leftLayout->addWidget(publicChatLabel);
 
     // 4. Spazio extra opzionale, se vuoi aumentare leggermente la distanza tra `#public` e i `ChatItem`
@@ -331,9 +333,9 @@ void ChatRoom::addChatItem(const QString &nickname)
     for (int i = 0; i < scrollableLayout->count(); ++i)
     {
         QWidget *widget = scrollableLayout->itemAt(i)->widget();
-        if (ChatItem *chatItem = qobject_cast<ChatItem *>(widget))
+        if (PrivateChatItem *chatItem = qobject_cast<PrivateChatItem *>(widget))
         {
-            if (chatItem->getUserName() == nickname )
+            if (chatItem->getChatId() == nickname )
             {
                 qDebug() << "ChatItem con nickname" << nickname << "esiste già!";
                 return;
@@ -341,14 +343,15 @@ void ChatRoom::addChatItem(const QString &nickname)
         }
     }
 
-    ChatItem *chatUser = new ChatItem(nickname);
+    PrivateChatItem *chatUser = new PrivateChatItem(nickname);
     chatUser->setFixedHeight(30);
 
-    connect(chatUser , &ChatItem::closeRequested , this , &ChatRoom::removeChatItem);
+//    connect(chatUser , &ChatItem::closeRequested , this , &ChatRoom::removeChatItem);
+    connect(chatUser , &PrivateChatItem::closeRequested , this , &ChatRoom::removeChatItem);
     scrollableLayout->addWidget(chatUser);
 }
 
-void ChatRoom::removeChatItem(ChatItem *item)
+void ChatRoom::removeChatItem(PrivateChatItem *item)
 {
     if(!item) return;
 
@@ -363,9 +366,9 @@ void ChatRoom::updateChatItemStatus(const QString &nickname, bool isOnline)
     for (int i = 0; i < scrollableLayout->count(); ++i)
     {
         QWidget *widget = scrollableLayout->itemAt(i)->widget();
-        if (ChatItem *chatItem = qobject_cast<ChatItem *>(widget))
+        if (PrivateChatItem *chatItem = qobject_cast<PrivateChatItem *>(widget))
         {
-            if (chatItem->getUserName() == nickname)
+            if (chatItem->getChatId() == nickname)
             {
                 chatItem->setOnlineStatus(false);
                 return;
@@ -374,7 +377,7 @@ void ChatRoom::updateChatItemStatus(const QString &nickname, bool isOnline)
     }
 }
 
-void ChatRoom::appendNewMessage(const ChatRoomTextMessage &message)
+void ChatRoom::appendNewMessage(const Message& message)
 {
 
     // Crea il widget per il messaggio
@@ -392,6 +395,24 @@ void ChatRoom::appendNewMessage(const ChatRoomTextMessage &message)
     chatScrollArea->updateGeometry();
     updateScrollBar();
 }
+
+//void ChatRoom::appendBroadCastMessageUserConnected(const BroadcastUserConnectedMessage &message)
+//{
+//    // Crea il widget per il messaggio
+//    MessageWidget *messageWidget = new MessageWidget(message);
+//
+//    // Aggiungi il MessageWidget al layout della chat
+//    QWidget *messageContainer = chatScrollArea->widget();
+//    QVBoxLayout *messageLayout = qobject_cast<QVBoxLayout*>(messageContainer->layout());
+//    if (messageLayout)
+//    {
+//        messageLayout->addWidget(messageWidget);
+//    }
+//
+//    // Scroll verso il basso
+//    chatScrollArea->updateGeometry();
+//    updateScrollBar();
+//}
 
 void ChatRoom::onClickSendMessage()
 {

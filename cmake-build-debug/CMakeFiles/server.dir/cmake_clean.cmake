@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/message/type/src/broadcastUserConnectedMessage.cpp.o.d"
   "CMakeFiles/server.dir/message/type/src/broadcastUserDisconnectedMessage.cpp.o"
   "CMakeFiles/server.dir/message/type/src/broadcastUserDisconnectedMessage.cpp.o.d"
+  "CMakeFiles/server.dir/message/type/src/chatMessage.cpp.o"
+  "CMakeFiles/server.dir/message/type/src/chatMessage.cpp.o.d"
   "CMakeFiles/server.dir/message/type/src/chatRoomReadyMessage.cpp.o"
   "CMakeFiles/server.dir/message/type/src/chatRoomReadyMessage.cpp.o.d"
   "CMakeFiles/server.dir/message/type/src/chatroomTextMessage.cpp.o"

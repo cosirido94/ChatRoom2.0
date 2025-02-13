@@ -1,7 +1,7 @@
 CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_chatroom.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_chatItem.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -117,9 +117,9 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/chatroom.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/chatItem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -169,8 +169,6 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
@@ -280,25 +278,42 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- /usr/include/c++/11/variant \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/clickLabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/c++/11/variant \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_chatroom.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/chatroom.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollArea \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
@@ -311,7 +326,6 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
@@ -338,19 +352,10 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../server/include/user.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/sortedListWidget.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/clickLabel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/messageWidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
@@ -360,10 +365,14 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/broadcastUserDisconnectedMessage.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../message/type/include/chatroomTextMessage.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/../custom/include/chatItem.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/../include/privateChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/../include/chatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/../include/publicChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/../include/../include/chatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_privateChatItem.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/privateChatItem.h \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/moc_publicChatItem.cpp \
+ /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/ZDP5J4NNZP/../../../chatroom/include/publicChatItem.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_client.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
@@ -397,8 +406,6 @@ CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/../../../client/include/client.h \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_chatItem.cpp \
- /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/chatItem.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_clickLabel.cpp \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/../../../custom/include/clickLabel.h \
  /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/N4QHPNHBO3/moc_customLineEdit.cpp \

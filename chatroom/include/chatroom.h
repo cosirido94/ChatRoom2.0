@@ -17,7 +17,10 @@
 #include "../custom/include/sortedListWidget.h"
 #include "../custom/include/clickLabel.h"
 #include "../custom/include/messageWidget.h"
-#include "../custom/include/chatItem.h"
+#include "../include/privateChatItem.h"
+#include "../include/publicChatItem.h"
+//#include "../custom/include/chatItem.h"
+
 class ChatRoom : public QWidget
 {
     Q_OBJECT
@@ -32,7 +35,7 @@ public:
     void updateNumberClientConnected();
     void updateUserList(QString username , QColor colorUsername , bool op);
     void updateChatItemStatus(const QString &nickname , bool isOnline);
-    void appendNewMessage(const ChatRoomTextMessage& message);
+    void appendNewMessage(const Message& message);
     QString getNickname();
 
 private:
@@ -62,7 +65,7 @@ private:
     QHBoxLayout *mainLayout;
 //    QGridLayout *mainLayout;
     QLabel *messageLabel;
-    ChatItem *publicChatLabel;
+//    ChatItem *publicChatLabel;
     QVBoxLayout* scrollableLayout;
     QScrollArea *chatItemScrollArea;
     QWidget *leftColumn;
@@ -92,7 +95,7 @@ private slots:
 //    void showEvent(QShowEvent *event) override;
     void filterUsers( const QString &text);
     void addChatItem(const QString &nickname);
-    void removeChatItem(ChatItem *item);
+    void removeChatItem(PrivateChatItem *item);
 };
 
 

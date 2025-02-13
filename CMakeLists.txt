@@ -52,6 +52,7 @@ add_executable(server
         message/type/src/chatroomTextMessage.cpp
         message/handler/server/include/chatroomTextMessageHandler.h
         message/handler/server/src/chatroomTextMessageHandler.cpp
+        message/type/src/chatMessage.cpp
 )
 
 target_link_libraries(server
@@ -112,8 +113,15 @@ add_executable(client
         message/handler/client/src/chatroomTextMessageReceivedHandler.cpp
         custom/include/userWidget.h
         custom/src/userWidget.cpp
-        custom/include/chatItem.h
-        custom/src/chatItem.cpp
+       # custom/include/chatItem.h
+       # custom/src/chatItem.cpp
+        chatroom/include/chatItem.h
+        chatroom/src/chatItem.cpp
+        chatroom/include/publicChatItem.h
+        chatroom/src/publicChatItem.cpp
+        chatroom/include/privateChatItem.h
+        chatroom/src/privateChatItem.cpp
+        message/type/include/chatMessage.h
 )
 
 target_link_libraries(client

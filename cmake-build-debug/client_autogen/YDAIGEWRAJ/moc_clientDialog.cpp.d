@@ -1,8 +1,10 @@
 /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/YDAIGEWRAJ/moc_clientDialog.cpp: /home/ilcondor/Documents/Project\ C++/ChatRoom/client/include/clientDialog.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/cmake-build-debug/client_autogen/moc_predefs.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/chatroom.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/privateChatItem.h \
+  /home/ilcondor/Documents/Project\ C++/ChatRoom/chatroom/include/publicChatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/client/include/client.h \
-  /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/chatItem.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/clickLabel.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/customLineEdit.h \
   /home/ilcondor/Documents/Project\ C++/ChatRoom/custom/include/messageWidget.h \
